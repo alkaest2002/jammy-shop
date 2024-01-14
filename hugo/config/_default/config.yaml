@@ -2,4 +2,4 @@ title: Jammy
 baseURL: /
 languageCode: en-US
 defaultContentLanguage: en
-publishDir: ../public
+publishDir: ../docs
