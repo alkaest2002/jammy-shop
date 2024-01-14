@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl lg:px-0 xs:py-4 py-16">
+    <div class="mb-8">
+      <h2 class="text-xl font-bold text-slate-700">Products: {{ .Title }}</h2>
+      <a href="{{ .Permalink}}" class="text-sm text-pink-700">List by title in ascending order</a>
+    </div>
+    {{ $paginator := .Paginate .RegularPages.ByTitle.Reverse 12 }}
+    {{ partial "products/list-products" (dict "paginator" $paginator) }}
+  </div>
+{{ end }}

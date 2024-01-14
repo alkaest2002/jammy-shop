@@ -1,0 +1,14 @@
+{{ $page := .page }}
+{{ $itemImage := .itemImage }}
+{{ $itemImageThumb := $itemImage.Resize "x80" }}
+
+{{ $itemData := merge
+  $page.Params (dict
+    "itemURL" $page.Permalink
+    "imageURL" $itemImage.RelPermalink
+    "imageThumbURL" $itemImageThumb.RelPermalink
+    "imageThumbURLHeight" $itemImageThumb.Height
+    "imageThumbURLWidth" $itemImageThumb.Width
+    ) | jsonify }}
+
+{{ return $itemData }}

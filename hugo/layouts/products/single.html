@@ -1,0 +1,60 @@
+{{ define "main" }}
+  {{ $itemImage := index (where (.Resources.ByType "image") ".Height" "gt" 80) 0 }}
+  {{ $itemData := partial "checkout/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl lg:px-0 xs:py-4 py-16">
+    <div class="grid grid-cols-3 gap-3">
+      <div class="mb-3">
+        <div class="w-full relative rounded-lg">
+          <img 
+            src="{{ $itemImage.RelPermalink }}" 
+            alt="image of {{ .Title }}" 
+            class="w-96 bg-gray-50 rounded-lg ring-1 ring-gray-300"
+            height="{{ $itemImage.Height }}" 
+            width="{{ $itemImage.Width }}"
+          >
+        </div>
+      </div>
+      <article class="col-span-2">
+        <h1 class="text-2xl font-bold">SKU {{ upper .Params.sku }} - {{ .Title }}</h1>
+        {{ with .GetTerms "genres" }}
+          <div class="mt-0 mb-5">
+            {{ range . }}
+              <a href="{{ .Permalink }}" class="text-pink-700 px-1">#{{ .Title }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+        <div class="mb-9">
+          {{ .Content | markdownify }}
+        </div>
+        {{ if in .Params.features "sale"  }}
+          <span class="p-2 px-6 bg-gray-700 text-white rounded-full text-sm">Product on sale!</span>
+        {{ end }}
+        {{ if in .Params.features "new"  }}
+          <span class="p-2 px-6 bg-gray-700 text-white rounded-full text-sm">Product is new!</span>
+        {{ end }}
+        {{ partial "checkout/cart-actions.html" (dict 
+          "IsSection" false
+          "itemLink" .Permalink 
+          "itemData" $itemData) 
+        }}
+
+        {{ $opts := dict
+          "document" .
+          "indices" (slice "genres")
+        }}
+        
+        {{ with .Site.RegularPages.Related $opts | first 5 }}
+        <div class="mt-9">
+          <h2 class="text-xl font-semibold mb-3">Related items</h2>
+          <ul class="list-disc list-inside">
+            {{ range . }}
+              <li><a href="{{ .Permalink }}" class="text-pink-700">{{ .LinkTitle }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+      </article>
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,21 @@
+threshold: 80
+toLower: false
+includeNewer: false
+  
+indices:
+  
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: genres
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 100
+  
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: features
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 80

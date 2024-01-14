@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+body {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #475569;
+  --pagefind-ui-text: #475569;
+  --pagefind-ui-background: #f7f7f7;
+  --pagefind-ui-border: #64748b;
+  --pagefind-ui-tag: #64748b;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 5px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: serif;
+}
+
+.pagefind-ui__result {
+  padding: 0 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#logo-img {
+  width: 64px;
+}
+
+#fade-me-in.htmx-added {
+  opacity: 0;
+}
+
+#fade-me-in {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.icon-font {
+  height: 1.5rem;
+}
+
+img {
+  filter: saturate(.7);
+}
+
+article p {
+  margin-top: 1rem;
+  margin-bottom: .9rem;
+}

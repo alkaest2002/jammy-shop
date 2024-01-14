@@ -1,0 +1,74 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl lg:px-0 xs:py-4 py-16" x-data="useCart()">
+    <div class="mb-8">
+      <h1 class="text-xl font-bold">{{ .Title }}</h1>
+      <p>Please, review the items in the cart before proceeding to the checkout page.</p>
+    </div>
+    <div x-show="cart.cartTotal > 0" x-transition:leave.duration.0ms>
+      <table class="table w-full mb-2">
+        <thead>
+          <tr class="border-t-2 border-slate-500 bg-slate-200">
+            <th class="p-3 text-left w-[50%]">Item</th>
+            <th class="text-center w-[25%]">Quantity</th>
+            <th class="text-center w-[25%]">Total</th>
+          </tr>
+        </thead>
+        <template x-for="item in cart.items" :key="item.sku" x-transition>
+          <tr class="table-row border-b border-slate-400">
+            <td class="flex flex-wrap items-center gap-3 p-3">
+              <a :href="item.itemURL">
+                <image 
+                  :src="item.imageThumbURL" 
+                  class="max-w-12 py-2" 
+                  loading="lazy" 
+                  :alt="`image ${item.title}`" 
+                  :height="item.imageThumbURLHeight"
+                  :width="item.imageThumbURLWidth"
+                  ></image>
+             </a>
+              <div>
+                <p class="uppercase" x-text="item.sku"></p>
+                <a class="text-pink-700 text-ellipsis" :href="item.itemURL" x-text="item.title"> </a><br />
+                <span class="font-extrabold" x-currency="item.price"></span> <a href="#" @click.prevent="cart.removeItem(item, true)" class="text-xs text-pink-700">remove</a>
+              </div>
+            </td>
+            <td class="text-center">
+              <div class="flex flex-wrap items-center justify-center gap-1 ">
+                <div class="flex flex-wrap gap-1">
+                  <span x-text="item.quantity" class="block px-2 border rounded w-12"></span>
+                  <a href="#" class="block px-2 border bg-slate-300 hover:bg-slate-400 rounded w-12"
+                  @click.prevent="cart.addItem(item)">&plus;</a>
+                  <a href="#" class="block px-2 border bg-slate-300 hover:bg-slate-400 rounded w-12"
+                  @click.prevent="cart.removeItem(item, false)">&#8722;</a>
+                </div>
+              </div>
+            </td>
+            <td class="text-center" x-currency="item.price*item.quantity"></td>
+          </tr>
+        </template>
+        <tfoot>
+          <tr class="border-b-2 border-slate-500">
+            <th class="p-3 text-left" colspan="2">Grand Total</th>
+            <th x-currency="cart.cartTotal"></th>
+          </tr>
+        </tfoot>
+      </table>
+      <p class="italic text-xs"><span class="font-bold">Please note</span>: Tax and Shipping costs are not included yet.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-9">
+        <a href="#" class="inline-block p-3 bg-gray-600 hover:bg-gray-700 text-pink-50 rounded-lg transition" x-data="useCart()"
+          @click.prevent="cart.wipeCart()">
+          Empty cart
+        </a>
+        {{ with .GetPage "checkout/before-stripe" }}
+          <a href="{{ .Permalink }}"
+          class="inline-block p-3 bg-pink-600 hover:bg-pink-700 text-sky-50 rounded-lg transition">Proceed to {{ .Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+    <div x-show="cart.cartTotal == 0" x-transition:leave.duration.0ms>
+      <p>Cart is currently empty.</p>
+      <p><a href="{{ (.GetPage `products`).Permalink }}" class="text-pink-700">Wanna go shopping?</a></p>
+    </div>
+  </div>
+{{ end }}

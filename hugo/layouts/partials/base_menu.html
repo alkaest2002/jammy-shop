@@ -1,0 +1,28 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+{{- $class := .class }}
+
+{{- with index site.Menus $menuID }}
+  {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" (absURL .URL) }}
+    {{- $attrs = merge $attrs (dict "class" (default `mx-3` .Params.class)) }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" (printf "%s %s" (index $attrs "class") "active")) }}
+    {{- else if $page.HasMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" (printf "%s %s" (index $attrs "class") "ancestor")) }}
+    {{- end }}
+    {{- $name := .Name }}
+    <a
+      {{- range $k, $v := $attrs }}
+        {{- with $v }}
+          {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+        {{- end }}
+      {{- end -}}
+    >{{ $name }}</a>
+  {{- end }}
+{{- end }}

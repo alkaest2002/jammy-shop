@@ -1,0 +1,44 @@
+{{ $paginator := .paginator }}
+<div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+  {{ range $paginator.Pages }}
+    <div class="grow flex flex-col">
+      {{ $itemImage := index (where (.Resources.ByType "image") ".Height" "gt" 80) 0 }}
+      {{ $itemData := partial "checkout/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
+      <div class="relative overflow-hidden rounded-t-lg">
+        <a href="{{ .Permalink }}">
+          <img 
+            class="h-full w-full object-cover object-center bg-slate-200"
+            src="{{ $itemImage.RelPermalink }}" 
+            alt="image of {{ .Title }}"
+            height="{{ $itemImage.Height }}"
+            width="{{ $itemImage.Width }}"
+            loading="lazy" 
+          >
+        </a>
+      </div>
+      <div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg">
+        <div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0">
+          <h3 class="text-lg font-semibold truncate">{{ .Title }}</h3>
+          <p class="relative text-lg font-extrabold">{{ .Params.price | lang.FormatCurrency 2 "USD" }}</p>
+          {{ with .GetTerms "genres" }}
+            <div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm">
+            {{ range . }}
+              <a href="{{ .Permalink}}" class="text-gray-700 px-1">#{{ .Title }}</a>
+            {{ end }}
+            </div>
+          {{ end }}
+        </div>
+        <div class="p-3 pt-0">
+          {{ partial "checkout/cart-actions.html" (dict 
+            "IsSection" true
+            "itemLink" .Permalink 
+            "itemData" $itemData) 
+          }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+<div class="mt-9">
+  {{ partial "base_paginator.html" $paginator }}
+</div>

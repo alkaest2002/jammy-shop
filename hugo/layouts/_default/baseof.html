@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ .Site.Language }}" class="h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo {{ hugo.Version }}">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ with site.Params.description }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with resources.Get "static/css/main.css" }}
+    <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script defer src="/pagefind/pagefind-ui.js"></script>
+  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{ end }}
+</head>
+
+<body 
+  class="h-full flex flex-col text-slate-700 bg-slate-50" 
+  hx-boost="true"
+  hx-swap="transition:true" 
+  hx-push-url="true" 
+>
+  <header>
+    <section class="relative container mx-auto z-10">
+      {{ partial "base_header" . }}
+    </section>
+  </header>
+  <main class="grow">
+    <section class="h-full container mx-auto">
+      {{ block "main" . }}{{ end }}
+    </section>
+  </main>
+  <footer>
+    <section  class="container mx-auto">
+      {{ partial "base_footer" . }}
+    </section>
+  </footer>
+  {{ range $script := .Resources.Match "*.js" }}
+    {{ if hugo.IsDevelopment }}
+      {{ with . | js.Build }}
+        <script src="{{ .RelPermalink }}"></script>
+     {{ end }}
+    {{ else }}
+      {{ $opts := dict "minify" true }}
+      {{ with . | js.Build $opts | fingerprint }}
+        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "sippas-hugo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "watch-tailwind": "postcss assets/static/css/tailwind.css -o assets/static/css/main.css --watch",
+    "build-tailwind": "postcss assets/static/css/tailwind.css -o assets/static/css/main.css --minify",
+    
+    "watch-js": "esbuild assets/static/js/main.js --bundle --sourcemap=inline --target=es2017 --outfile=assets/static/js/bundle.js --watch",
+    "build-js": "esbuild assets/static/js/main.js --bundle --minify --target=es2017 --outfile=assets/static/js/bundle.js",
+    
+    "watch-hugo": "hugo server -p 8000 --disableFastRender --ignoreCache",
+    "build-hugo": "hugo --gc --minify",
+    
+    "build-pagefind": "npm_config_yes=true npx pagefind --site ../public --output-subdir ../hugo/static/pagefind",
+    
+    "dev": "concurrently \"npm:watch-tailwind\" \"npm:watch-js\" \"npm:watch-hugo\"",
+    "build": "npm run build-tailwind && npm run build-js && npm run build-hugo --cleanDestinationDir && npm run build-pagefind"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "cssnano": "^6.0.3",
+    "esbuild": "^0.19.11",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@alpinejs/persist": "^3.13.3",
+    "alpinejs": "^3.13.3",
+    "htmx.org": "^1.9.10"
+  }
+}

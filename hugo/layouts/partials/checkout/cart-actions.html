@@ -1,0 +1,20 @@
+<div class="flex flex-col gap-2 mt-3" x-data="useCart()">
+  <div class="grow text-xs p-1" :class="{ 'invisible' : !cart.getItemProp({{ .itemData }}, 'quantity') }" x-transition
+    x-cloak>
+    <span x-text="cart.getItemProp({{ .itemData }}, 'quantity')"></span> <span>in bag - </span>
+    <a class="text-sky-600" href="#" @click.prevent="cart.removeItem({{ .itemData }}, true)">remove</a>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    {{ if .IsSection }}
+    <a href="{{ .itemLink }}"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" >
+      <img src="{{ (resources.Get `/static/images/eye.svg`).RelPermalink }}" height="64" alt="magnifier-icon" class="icon-font">
+    </a>
+    {{ end }}
+    <a href="#"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"
+      @click.prevent="cart.addItem({{ .itemData }})">
+      Add item <span class="sr-only">, {{ .Title }}</span>
+    </a>
+  </div>
+</div>

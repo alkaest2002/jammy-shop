@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ .Site.Language }}" class="h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo {{ hugo.Version }}">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ with site.Params.description }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with resources.Get "static/css/main.css" }}
+    <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{ end }}
+</head>
+
+<body class="h-full text-slate-700">
+  <main class="h-full flex items-center justify-center">
+    <section class="grow mx-auto">
+      {{ block "main" . }}{{ end }}
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{{ if gt .TotalPages 1 }}
+  {{ with . }}
+    <nav class="flex items-center justify-between border-t border-gray-200 py-3" aria-label="Pagination">
+      <div class="hidden sm:block">
+        <p class="text-sm">
+          Showing page
+          <span class="font-medium">{{ .PageNumber }}</span>
+          of
+          <span class="font-medium">{{ .TotalPages }}</span>
+          pages
+        </p>
+      </div>
+      <div class="flex flex-1 justify-between sm:justify-end">
+        {{ if .HasPrev }}
+          <a href="{{ .Prev.URL }}" class="relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold  ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
+          prev
+        </a>
+        {{ else }}
+          <span class="relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-slate-700/30 ring-1 ring-inset ring-gray-300/30 cursor-not-allowed">prev</span>
+        {{ end }}
+        {{ if .HasNext }}
+          <a href="{{ .Next.URL }}" class="relative ml-3 inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300">next</a>
+        {{ else }}
+          <span class="relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-slate-700/30 ring-1 ring-inset ring-gray-300/30 cursor-not-allowed">next</span>
+        {{ end }}
+      </div>
+    </nav>
+  {{ end }}
+{{ end }}

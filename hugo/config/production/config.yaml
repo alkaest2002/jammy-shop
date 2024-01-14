@@ -1,0 +1,3 @@
+baseURL: https://demo-shop.xyz
+enableRobotsTXT: true
+minify: true

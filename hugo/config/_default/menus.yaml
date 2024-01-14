@@ -1,0 +1,13 @@
+main:
+
+  - name: All products
+    pageRef: "/products"
+    weight: 1
+
+  - name: New arrivals
+    pageRef: "/features/new"
+    weight: 10
+
+  - name: On sale
+    pageRef: "/features/sale"
+    weight: 20
