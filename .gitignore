@@ -23,3 +23,4 @@ go.work
 .DS_Store
 hugo/resources/
 */node_modules/
+.env
