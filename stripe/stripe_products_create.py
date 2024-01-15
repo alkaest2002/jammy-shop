@@ -19,7 +19,7 @@ for key, hugo_product in hugo_products.items():
      metadata= { "sku": hugo_product["sku"]},
   )
   hugo_products[hugo_product["sku"]]["stripe_price_id"] = stripe_product["default_price"]
-  hugo_products[hugo_product["sku"]]["stripe_prodcut_id"] = stripe_product["id"]
+  hugo_products[hugo_product["sku"]]["stripe_product_id"] = stripe_product["id"]
   hugo_products[hugo_product["sku"]]["stripe_taxcode_id"] = TAX_CODE
 
 with open("./hugo_products.json", "w") as fout:

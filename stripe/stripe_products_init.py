@@ -24,7 +24,7 @@ for hugo_product_sku, hugo_product in hugo_products.items():
   )
   # update hugo_products
   hugo_products[hugo_product["sku"]]["stripe_price_id"] = stripe_product["default_price"]
-  hugo_products[hugo_product["sku"]]["stripe_prodcut_id"] = stripe_product["id"]
+  hugo_products[hugo_product["sku"]]["stripe_product_id"] = stripe_product["id"]
   hugo_products[hugo_product["sku"]]["stripe_taxcode_id"] = TAX_CODE
 
 # write json back

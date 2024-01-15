@@ -18,7 +18,7 @@ def load_products(starting_after = None, products = {}, limit = 100):
     return load_products(prouducts_from_stripe.data[-1], products, limit)
   return  products
 
-products = load_products(None, {}, 100)
+products = load_products(None, {}, 5)
 
 # write json objectxw
 with open("stripe_products.json", "wb") as fout:
