@@ -1,13 +1,19 @@
 ---
-sku: a2v2a
-price: 10
-title: "Tactics Ogre: Reborn"
-region: ALL
+genres:
+- simulation
+- role-playing
 languages: EN,FR,DE,ES,JA,KO,TH,ZHTW,ZHCN
+price: 10
 publisher: SQUARE ENIX
-genres: [simulation,role-playing]
+region: ALL
+sku: a2v2a
+stripe_price_id: price_1OYphOBC2mcEPes8clHdbJPB
+stripe_product_id: prod_PNatSM052Qx0Tb
+stripe_taxcode_id: txcd_99999999
+title: 'Tactics Ogre: Reborn'
 ---
- Based on the 2010 release, the game features improved graphics and sound, as well as updated game design, bringing to life a new Tactics Ogre that remains true to its roots. Tactics Ogre veterans will experience a game that surpasses their fondest memories, while players new to Tactics Ogre will discover a game unlike any they've ever played. Reborn and deeper than ever, the game enables players to immerse themselves in the world and intrigue of Tactics Ogre like never before.
+
+Based on the 2010 release, the game features improved graphics and sound, as well as updated game design, bringing to life a new Tactics Ogre that remains true to its roots. Tactics Ogre veterans will experience a game that surpasses their fondest memories, while players new to Tactics Ogre will discover a game unlike any they've ever played. Reborn and deeper than ever, the game enables players to immerse themselves in the world and intrigue of Tactics Ogre like never before.
 
 ・Tactics Ogre: Reborn Features
 -A tactical role-playing game depicting the struggle for control of the Valerian Isles.

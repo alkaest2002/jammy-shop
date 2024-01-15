@@ -1,13 +1,21 @@
 ---
-sku: a3hce
-price: 15
-title: "Monark"
-region: USA
+features:
+- new
+genres:
+- adventure
+- role-playing
+- strategy
 languages: EN
+price: 15
 publisher: NIS America
-genres: [adventure,role-playing,strategy]
-features: [new]
+region: USA
+sku: a3hce
+stripe_price_id: price_1OYphPBC2mcEPes8IU482mPF
+stripe_product_id: prod_PNatOyC3dXjux9
+stripe_taxcode_id: txcd_99999999
+title: Monark
 ---
+
 Includes the MONARK full game and the Casual Outfit Set, which contains the following 5 costumes:
 
 - Protagonist's Casual Outfit

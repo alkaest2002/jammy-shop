@@ -1,13 +1,20 @@
 ---
-sku: a2yrb
-price: 40
-title: "Love Esquire"
-region: ALL
+genres:
+- adventure
+- role-playing
+- strategy
 languages: EN,DE,ZHTW,ZHCN,RU
+price: 40
 publisher: Mama Morin
-genres: [adventure,role-playing,strategy]
+region: ALL
+sku: a2yrb
+stripe_price_id: price_1OYphSBC2mcEPes8PrJOAm8q
+stripe_product_id: prod_PNatSiZrXnVwb1
+stripe_taxcode_id: txcd_99999999
+title: Love Esquire
 ---
- In Love Esquire, you're not a famous knight, but a good-for-nothing squire who's on a quest to find man's greatest pleasure. Getting the girl won't be easy though, since most of them are waaaay out of your league!
+
+In Love Esquire, you're not a famous knight, but a good-for-nothing squire who's on a quest to find man's greatest pleasure. Getting the girl won't be easy though, since most of them are waaaay out of your league!
 
 So raise those stats, battle monsters, and unleash your full potential!
 

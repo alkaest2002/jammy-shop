@@ -1,14 +1,23 @@
 ---
-sku: a2hea
-price: 35
-title: "Potion Permit"
-region: ALL
+features:
+- sale
+genres:
+- action
+- adventure
+- role-playing
+- puzzle
 languages: EN,FR,DE,ES,PT,KO,ZHCN,RU
+price: 35
 publisher: PQube
-genres: [action,adventure,role-playing,puzzle]
-features: [sale]
+region: ALL
+sku: a2hea
+stripe_price_id: price_1OYphNBC2mcEPes8UXcxQbPZ
+stripe_product_id: prod_PNatf0eP4s6uH7
+stripe_taxcode_id: txcd_99999999
+title: Potion Permit
 ---
- The town of Moonbury has always been wary of the advances of the outside world, preferring to rely on their traditional methods of healing. Until one day, when the mayor's daughter falls ill, and the local witch doctor can do nothing to help her, they are forced to look outside their small community for help.
+
+The town of Moonbury has always been wary of the advances of the outside world, preferring to rely on their traditional methods of healing. Until one day, when the mayor's daughter falls ill, and the local witch doctor can do nothing to help her, they are forced to look outside their small community for help.
 The Medical Association decides to send their most accomplished chemist - you - to help cure the mayor's daughter and convince the residents of Moonbury of the wonders of modern alchemy. Gain their trust and tend to each person when they fall ill in this open-ended sim RPG.
 
 Features

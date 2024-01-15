@@ -1,14 +1,23 @@
 ---
-sku: a3sda
-price: 60
-title: "Metroid Prime Remastered"
-region: ALL
+features:
+- sale
+genres:
+- action
+- adventure
+- platformer
+- first-person shooter
 languages: EN,FR,DE,ES,IT,NL,JA,KO,ZHTW,ZHCN
+price: 60
 publisher: Nintendo
-genres: [action,adventure,platformer,first-person shooter]
-features: [sale]
+region: ALL
+sku: a3sda
+stripe_price_id: price_1OYphXBC2mcEPes8A7lxN5D4
+stripe_product_id: prod_PNatLr46rqedfh
+stripe_taxcode_id: txcd_99999999
+title: Metroid Prime Remastered
 ---
- Suit up for an iconic adventure
+
+Suit up for an iconic adventure
 
 Intergalactic bounty hunter Samus Aran receives a distress signal from a wrecked frigate in orbit around planet Tallon IV. Upon investigation, the frigate reveals itself to be a Space Pirate research vessel home to terrifying genetic experiments using the mysterious Phazon substance. There, Samus encounters her nemesis, Meta Ridley, whom she pursues to the surface of Tallon IV. It’s up to her alone to explore the planet’s interconnected regions, investigate its dark secrets, and end the intergalactic threat posed by Phazon.
 

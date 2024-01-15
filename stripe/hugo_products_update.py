@@ -14,3 +14,5 @@ for product_sku, product in stripe_products.items():
   hugo_product.metadata["stripe_taxcode_id"] = product["tax_code"]
   f = BytesIO()
   frontmatter.dump(hugo_product, f)
+  with open(hugo_product_md_file, "wb") as fout:
+    fout.write(f.getbuffer())

@@ -1,13 +1,21 @@
 ---
-sku: a2qka
-price: 55
-title: "Golden Force"
-region: ALL
+genres:
+- action
+- adventure
+- arcade
+- platformer
 languages: EN
+price: 55
 publisher: No Gravity Games
-genres: [action,adventure,arcade,platformer]
+region: ALL
+sku: a2qka
+stripe_price_id: price_1OYphVBC2mcEPes8MNjMK6v6
+stripe_product_id: prod_PNatNV2APRYvHP
+stripe_taxcode_id: txcd_99999999
+title: Golden Force
 ---
- The King of Demons sets his sights on Muscle Island, a peaceful paradise where life is good and all is well. Yet this evil monster sends in his army and attacks the populace with the help of his Wasting their last coins in the island’s taverns, mercenaries from the powerful Golden Force enjoy their last moments of vacation when they receive a new contract: defeat this evil threat in order to win back the Gold Mountain now in the Demon King’s possession.
+
+The King of Demons sets his sights on Muscle Island, a peaceful paradise where life is good and all is well. Yet this evil monster sends in his army and attacks the populace with the help of his Wasting their last coins in the island’s taverns, mercenaries from the powerful Golden Force enjoy their last moments of vacation when they receive a new contract: defeat this evil threat in order to win back the Gold Mountain now in the Demon King’s possession.
 Where there’s gold and a promise of great battles,count on the Golden Force to save your skin!
 
 Features:

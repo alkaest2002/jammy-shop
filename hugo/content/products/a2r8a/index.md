@@ -1,13 +1,21 @@
 ---
-sku: a2r8a
-price: 20
-title: "Astalon: Tears of the Earth"
-region: ALL
+genres:
+- action
+- adventure
+- puzzle
+- platformer
 languages: EN,FR,DE,ES,JA,KO,ZHCN
+price: 20
 publisher: DANGEN Entertainment
-genres: [action,adventure,puzzle,platformer]
+region: ALL
+sku: a2r8a
+stripe_price_id: price_1OYphOBC2mcEPes8ESAvRHcB
+stripe_product_id: prod_PNatpDK6qu12yD
+stripe_taxcode_id: txcd_99999999
+title: 'Astalon: Tears of the Earth'
 ---
- LIMITED RUN #138
+
+LIMITED RUN #138
  Relive the glory days of 8-bit action-adventure through beautifully detailed, authentic pixel art set in a dark, fantastic world! Astalon features the progressive exploration of an interconnected world with the swiftness and quick rhythm of a room-by-room action platformer.
 
 Original character design by Ryusuke Mita, creator of world-famous manga Dragon Half!

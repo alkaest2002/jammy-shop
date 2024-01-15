@@ -1,13 +1,20 @@
 ---
-sku: a3t9a
-price: 40
-title: "Pathway"
-region: ALL
+genres:
+- adventure
+- role-playing
+- strategy
 languages: EN,FR,DE,JA,ZHCN
+price: 40
 publisher: Chucklefish
-genres: [adventure,role-playing,strategy]
+region: ALL
+sku: a3t9a
+stripe_price_id: price_1OYphRBC2mcEPes8qywJPmKq
+stripe_product_id: prod_PNat28e30Bojct
+stripe_taxcode_id: txcd_99999999
+title: Pathway
 ---
- LIMITED RUN #124
+
+LIMITED RUN #124
 
 In 1936, Nazi influence has spread, along with rumours of secret excavations, mysterious artefacts, and gruesome occult rituals… Assemble a bold team of adventurers and journey through the desert-wilderness. Outwit foes in strategic squad combat and locate ancient treasures before they fall into the wrong hands!
 

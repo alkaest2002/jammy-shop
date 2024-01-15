@@ -1,13 +1,20 @@
 ---
-sku: a3uka
-price: 10
-title: "Save me Mr Tako: Definitive Edition"
-region: ALL
+genres:
+- action
+- adventure
+- role-playing
 languages: EN,FR
+price: 10
 publisher: Limited Run Games
-genres: [action,adventure,role-playing]
+region: ALL
+sku: a3uka
+stripe_price_id: price_1OYphYBC2mcEPes8rQtnOztX
+stripe_product_id: prod_PNatkdlHfyzuE0
+stripe_taxcode_id: txcd_99999999
+title: 'Save me Mr Tako: Definitive Edition'
 ---
- SWITCH LIMITED RUN #147
+
+SWITCH LIMITED RUN #147
 
 Dive into a great adventure in the classic handheld era!
 

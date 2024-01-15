@@ -1,13 +1,20 @@
 ---
-sku: a2gla
-price: 25
-title: "Nickelodeon All-Star Brawl"
-region: ALL
+genres:
+- action
+- fighting
+- 2d fighting
 languages: EN,FR,DE,ES,IT,NL
+price: 25
 publisher: GameMill Entertainment
-genres: [action,fighting,2d fighting]
+region: ALL
+sku: a2gla
+stripe_price_id: price_1OYphbBC2mcEPes8LPMczdpt
+stripe_product_id: prod_PNatHw564DAgaL
+stripe_taxcode_id: txcd_99999999
+title: Nickelodeon All-Star Brawl
 ---
- Brawl it out as your favorite Nickelodeon characters in bombastic platform battles! With a power-packed cast of heroes from the Nickelodeon universe, face-off with all-stars from SpongeBob SquarePants, Teenage Mutant Ninja Turtles, The Loud House, Danny Phantom, Aaahh!!! Real Monsters, The Wild Thornberrys, Hey Arnold!, Rugrats, and more to determine ultimate animation dominance. With unique move sets and attacks inspired by their personalities, each character has an individual style of play enabling endless action for Nickelodeon’s legion of fans. Select your favorite and then let the intense brawls begin with online and local multiplayer action.
+
+Brawl it out as your favorite Nickelodeon characters in bombastic platform battles! With a power-packed cast of heroes from the Nickelodeon universe, face-off with all-stars from SpongeBob SquarePants, Teenage Mutant Ninja Turtles, The Loud House, Danny Phantom, Aaahh!!! Real Monsters, The Wild Thornberrys, Hey Arnold!, Rugrats, and more to determine ultimate animation dominance. With unique move sets and attacks inspired by their personalities, each character has an individual style of play enabling endless action for Nickelodeon’s legion of fans. Select your favorite and then let the intense brawls begin with online and local multiplayer action.
 
 • Playable characters include SpongeBob, Lincoln Loud, Ninja Turtles Michelangelo and Leonardo, Oblina from Aaahh!!! Real Monsters, Invader Zim, and many more!
 • 20 themed levels like Jellyfish Fields from the SpongeBob SquarePants series, Technodrome from Teenage Mutant Ninja Turtles series, plus many more!

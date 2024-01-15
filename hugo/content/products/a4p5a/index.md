@@ -1,13 +1,18 @@
 ---
-sku: a4p5a
-price: 20
-title: "Train Life: A Railway Simulator"
-region: ALL
+genres:
+- simulation
 languages: EN,FR,DE,ES,IT,NL,PT,JA,ZHCN,RU
+price: 20
 publisher: Nacon
-genres: [simulation]
+region: ALL
+sku: a4p5a
+stripe_price_id: price_1OYphQBC2mcEPes8ajQb7Hel
+stripe_product_id: prod_PNatDk2qGZSZaQ
+stripe_taxcode_id: txcd_99999999
+title: 'Train Life: A Railway Simulator'
 ---
- For the first time in a railway simulator, you are the driver and the company manager!
+
+For the first time in a railway simulator, you are the driver and the company manager!
 
 TAKE THE CONTROL OF YOUR TRAIN AND TRAVEL TO EUROPE
 Drive your passengers or goods across 10 countries and explore the countryside, towns, forests, and mountains of Europe from your cab. Each locomotive has its own characteristics (power, braking, etc.), and you need to learn to control it expertly while following the railway signs and adapting to the weather conditions.

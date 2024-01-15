@@ -1,14 +1,22 @@
 ---
-sku: a2r3b
-price: 5
-title: "Dragon Star Varnir"
-region: USA
+features:
+- sale
+genres:
+- action
+- adventure
+- role-playing
 languages: EN
+price: 5
 publisher: Idea Factory
-genres: [action,adventure,role-playing]
-features: [sale]
+region: USA
+sku: a2r3b
+stripe_price_id: price_1OYphUBC2mcEPes8fGwpc1N8
+stripe_product_id: prod_PNatOveSqnu9ZY
+stripe_taxcode_id: txcd_99999999
+title: Dragon Star Varnir
 ---
- In a world where the bones of an ancient beast tower over the land...​​
+
+In a world where the bones of an ancient beast tower over the land...​​
 
 The Knight Zephy is part of an order whose role is to hunt down witches – people seen as cursed beings for giving birth to dragons.​​
 

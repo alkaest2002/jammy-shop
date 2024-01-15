@@ -1,13 +1,20 @@
 ---
-sku: a4nxa
-price: 30
-title: "DreamWorks Dragons: Legends of The Nine Realms"
-region: ALL
+genres:
+- action
+- adventure
+- role-playing
 languages: EN,FR,DE,ES,IT,NL,PT,SE,DK,NO,FI,AR,JA,KO,ZHCN,PL
+price: 30
 publisher: Outright Games
-genres: [action,adventure,role-playing]
+region: ALL
+sku: a4nxa
+stripe_price_id: price_1OYphbBC2mcEPes8lQospxqs
+stripe_product_id: prod_PNatLiWlPbMOW1
+stripe_taxcode_id: txcd_99999999
+title: 'DreamWorks Dragons: Legends of The Nine Realms'
 ---
- Unleash your inner dragon and fly beyond the Hidden World, on your fiery adventure to rescue Thunder’s family and save the dragon kingdoms!
+
+Unleash your inner dragon and fly beyond the Hidden World, on your fiery adventure to rescue Thunder’s family and save the dragon kingdoms!
 
 Feel the wind against your scales as you soar and dive through unexplored realms. Use your speed, tail, and claws to defeat the worthy foes and gigantic dragon bosses that stand in your way. Level up Thunder and his friends to become the ultimate dragon heroes by choosing new unlockable skills and powers.
 
