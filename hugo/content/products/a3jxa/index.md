@@ -1,13 +1,17 @@
 ---
-sku: a3jxa
-price: 15
-title: "Blaster Master Zero 3"
-region: ALL
+genres:
+- action
+- adventure
 languages: EN,FR,DE,ES,IT,PT,JA,KO,ZHCN
+new: new
+price: 15
 publisher: Inti Creates
-genres: [action,adventure]
+region: ALL
+sku: a3jxa
+title: Blaster Master Zero 3
 ---
- LIMITED RUN #109
+
+LIMITED RUN #109
 
 Blaster Master Zero 3's hybrid of sidescrolling and top-down action is back for its 3rd chapter, and more intense than ever before! Series protagonist Jason travels to where the series all began, the planet Sophia, in order to save series heroine Eve in this final installment of the BMZ trilogy.
 
