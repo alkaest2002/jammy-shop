@@ -9,11 +9,9 @@ for res in products_md_folder.glob("*"):
     product_md = res / "index.md"
     with open(product_md) as fin:
       metadata, content = frontmatter.parse(fin.read())
-      products[metadata['sku']] = {
-        **metadata,
-        "content": content
-      }
-# write json object
+      products[metadata['sku']] = metadata
+
+# if requested, write json object
 with open("hugo_products.json", "wb") as fout:
   encoded_data = json.dumps(products, indent=2).encode('utf-8')
   fout.write(encoded_data)

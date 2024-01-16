@@ -3,6 +3,7 @@ import stripe
 from dotenv import load_dotenv
 import json
 
+# load environmen vars
 load_dotenv()
 stripe.api_key = os.getenv("STRIPE_API_KEY")
 

@@ -21,7 +21,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323345,
-    "url": "https://demo-shop.xyz/products/a3pga/"
+    "url": "https://demo-shop.xyz/products/a3pga/",
+    "price": 5.0
   },
   "a2g7a": {
     "id": "prod_PNatsUSs6Hvv8X",
@@ -45,7 +46,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323344,
-    "url": "https://demo-shop.xyz/products/a2g7a/"
+    "url": "https://demo-shop.xyz/products/a2g7a/",
+    "price": 30.0
   },
   "a4nxa": {
     "id": "prod_PNatLiWlPbMOW1",
@@ -69,7 +71,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323343,
-    "url": "https://demo-shop.xyz/products/a4nxa/"
+    "url": "https://demo-shop.xyz/products/a4nxa/",
+    "price": 30.0
   },
   "a2gla": {
     "id": "prod_PNatHw564DAgaL",
@@ -93,7 +96,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323343,
-    "url": "https://demo-shop.xyz/products/a2gla/"
+    "url": "https://demo-shop.xyz/products/a2gla/",
+    "price": 25.0
   },
   "a2jya": {
     "id": "prod_PNatDMVhyUNgZP",
@@ -117,7 +121,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323342,
-    "url": "https://demo-shop.xyz/products/a2jya/"
+    "url": "https://demo-shop.xyz/products/a2jya/",
+    "price": 25.0
   },
   "a4kya": {
     "id": "prod_PNatYvEuEXxkW9",
@@ -141,7 +146,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323341,
-    "url": "https://demo-shop.xyz/products/a4kya/"
+    "url": "https://demo-shop.xyz/products/a4kya/",
+    "price": 55.0
   },
   "a3aye": {
     "id": "prod_PNatUfJu2M99kX",
@@ -165,7 +171,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323341,
-    "url": "https://demo-shop.xyz/products/a3aye/"
+    "url": "https://demo-shop.xyz/products/a3aye/",
+    "price": 45.0
   },
   "a4t3a": {
     "id": "prod_PNatnp1sk1k3iQ",
@@ -189,7 +196,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323340,
-    "url": "https://demo-shop.xyz/products/a4t3a/"
+    "url": "https://demo-shop.xyz/products/a4t3a/",
+    "price": 15.0
   },
   "a3uka": {
     "id": "prod_PNatkdlHfyzuE0",
@@ -213,7 +221,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323340,
-    "url": "https://demo-shop.xyz/products/a3uka/"
+    "url": "https://demo-shop.xyz/products/a3uka/",
+    "price": 10.0
   },
   "a3sda": {
     "id": "prod_PNatLr46rqedfh",
@@ -237,7 +246,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323339,
-    "url": "https://demo-shop.xyz/products/a3sda/"
+    "url": "https://demo-shop.xyz/products/a3sda/",
+    "price": 60.0
   },
   "a3yna": {
     "id": "prod_PNatFJ4DHjNySC",
@@ -261,7 +271,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323338,
-    "url": "https://demo-shop.xyz/products/a3yna/"
+    "url": "https://demo-shop.xyz/products/a3yna/",
+    "price": 10.0
   },
   "a2qka": {
     "id": "prod_PNatNV2APRYvHP",
@@ -285,7 +296,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323337,
-    "url": "https://demo-shop.xyz/products/a2qka/"
+    "url": "https://demo-shop.xyz/products/a2qka/",
+    "price": 55.0
   },
   "a4taa": {
     "id": "prod_PNatieSTAhv03A",
@@ -309,7 +321,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323337,
-    "url": "https://demo-shop.xyz/products/a4taa/"
+    "url": "https://demo-shop.xyz/products/a4taa/",
+    "price": 15.0
   },
   "a4u6b": {
     "id": "prod_PNatBXnKwzPjvF",
@@ -333,7 +346,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323336,
-    "url": "https://demo-shop.xyz/products/a4u6b/"
+    "url": "https://demo-shop.xyz/products/a4u6b/",
+    "price": 45.0
   },
   "a2r3b": {
     "id": "prod_PNatOveSqnu9ZY",
@@ -357,7 +371,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323336,
-    "url": "https://demo-shop.xyz/products/a2r3b/"
+    "url": "https://demo-shop.xyz/products/a2r3b/",
+    "price": 5.0
   },
   "a2mxa": {
     "id": "prod_PNat7YmEAJIwqL",
@@ -381,7 +396,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323335,
-    "url": "https://demo-shop.xyz/products/a2mxa/"
+    "url": "https://demo-shop.xyz/products/a2mxa/",
+    "price": 10.0
   },
   "a2yrb": {
     "id": "prod_PNatSiZrXnVwb1",
@@ -405,7 +421,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323334,
-    "url": "https://demo-shop.xyz/products/a2yrb/"
+    "url": "https://demo-shop.xyz/products/a2yrb/",
+    "price": 40.0
   },
   "a2lsa": {
     "id": "prod_PNathXnaEGhOAk",
@@ -429,7 +446,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323334,
-    "url": "https://demo-shop.xyz/products/a2lsa/"
+    "url": "https://demo-shop.xyz/products/a2lsa/",
+    "price": 50.0
   },
   "a4cpa": {
     "id": "prod_PNatM7Jd0GfiqT",
@@ -453,7 +471,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323333,
-    "url": "https://demo-shop.xyz/products/a4cpa/"
+    "url": "https://demo-shop.xyz/products/a4cpa/",
+    "price": 25.0
   },
   "a3t9a": {
     "id": "prod_PNat28e30Bojct",
@@ -477,7 +496,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323333,
-    "url": "https://demo-shop.xyz/products/a3t9a/"
+    "url": "https://demo-shop.xyz/products/a3t9a/",
+    "price": 40.0
   },
   "a4p5a": {
     "id": "prod_PNatDk2qGZSZaQ",
@@ -501,7 +521,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323332,
-    "url": "https://demo-shop.xyz/products/a4p5a/"
+    "url": "https://demo-shop.xyz/products/a4p5a/",
+    "price": 20.0
   },
   "a3hce": {
     "id": "prod_PNatOyC3dXjux9",
@@ -525,7 +546,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323331,
-    "url": "https://demo-shop.xyz/products/a3hce/"
+    "url": "https://demo-shop.xyz/products/a3hce/",
+    "price": 15.0
   },
   "a2r8a": {
     "id": "prod_PNatpDK6qu12yD",
@@ -549,7 +571,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323330,
-    "url": "https://demo-shop.xyz/products/a2r8a/"
+    "url": "https://demo-shop.xyz/products/a2r8a/",
+    "price": 20.0
   },
   "a2v2a": {
     "id": "prod_PNatSM052Qx0Tb",
@@ -573,7 +596,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323330,
-    "url": "https://demo-shop.xyz/products/a2v2a/"
+    "url": "https://demo-shop.xyz/products/a2v2a/",
+    "price": 10.0
   },
   "a2hea": {
     "id": "prod_PNatf0eP4s6uH7",
@@ -597,7 +621,8 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323329,
-    "url": "https://demo-shop.xyz/products/a2hea/"
+    "url": "https://demo-shop.xyz/products/a2hea/",
+    "price": 35.0
   },
   "a3jxa": {
     "id": "prod_PNatl7boCsS554",
@@ -621,6 +646,7 @@
     "type": "service",
     "unit_label": null,
     "updated": 1705323328,
-    "url": "https://demo-shop.xyz/products/a3jxa/"
+    "url": "https://demo-shop.xyz/products/a3jxa/",
+    "price": 15.0
   }
 }
