@@ -24,3 +24,7 @@ go.work
 hugo/resources/
 */node_modules/
 .env
+.deployed
+virtualenv
+__deployer__.zip
+__pycache__/

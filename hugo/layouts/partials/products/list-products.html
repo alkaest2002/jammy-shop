@@ -1,6 +1,5 @@
-{{ $paginator := .paginator }}
 <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-  {{ range $paginator.Pages }}
+  {{ range .paginator.Pages }}
     <div class="grow flex flex-col">
       {{ $itemImage := index (where (.Resources.ByType "image") ".Height" "gt" 80) 0 }}
       {{ $itemData := partial "checkout/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
@@ -40,5 +39,5 @@
   {{ end }}
 </div>
 <div class="mt-9">
-  {{ partial "base_paginator.html" $paginator }}
+  {{ partial "base_paginator.html" .paginator }}
 </div>

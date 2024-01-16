@@ -1,0 +1,20 @@
+parameters: {}
+environment: {}
+packages:
+    - name: jammy
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: cart
+          binary: false
+          main: ""
+          runtime: python:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment:
+            { STRIPE_API_KEY: "${STRIPE_API_KEY}" }
+          annotations: {}
+          limits: {}

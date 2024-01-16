@@ -55,15 +55,15 @@
       </table>
       <p class="italic text-xs"><span class="font-bold">Please note</span>: Tax and Shipping costs are not included yet.
       </p>
-      <div class="flex flex-wrap gap-2 mt-9">
+      <div class="flex flex-wrap justify-between gap-2 mt-9">
+        {{ with .GetPage "checkout/before-stripe" }}
+        <a href="{{ .Permalink }}"
+        class="inline-block p-3 bg-pink-600 hover:bg-pink-700 text-sky-50 rounded-lg transition">Proceed to {{ .Title }}</a>
+        {{ end }}
         <a href="#" class="inline-block p-3 bg-gray-600 hover:bg-gray-700 text-pink-50 rounded-lg transition" x-data="useCart()"
           @click.prevent="cart.wipeCart()">
           Empty cart
         </a>
-        {{ with .GetPage "checkout/before-stripe" }}
-          <a href="{{ .Permalink }}"
-          class="inline-block p-3 bg-pink-600 hover:bg-pink-700 text-sky-50 rounded-lg transition">Proceed to {{ .Title }}</a>
-        {{ end }}
       </div>
     </div>
     <div x-show="cart.cartTotal == 0" x-transition:leave.duration.0ms>
