@@ -1,4 +1,6 @@
 ---
+features:
+- new
 genres:
 - puzzle
 - platformer

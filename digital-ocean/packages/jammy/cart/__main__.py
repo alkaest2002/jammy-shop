@@ -32,12 +32,17 @@ def main(args):
   
     # if checks are passed
     checkout_session = stripe.checkout.Session.create(
-        line_items=[{ "price": item["price_id"], "quantity": item["quantity"], } for item in cart],
-        mode='payment',
-        cancel_url = 'https://demo-shop.xyz//checkout/cancel/',
+        line_items=[
+          { "price": item["price_id"], "quantity": item["quantity"] } for item in cart
+        ],
+        mode="payment",
+        shipping_address_collection = { "allowed_countries": ["US",  "IT"] },
+        cancel_url = "https://demo-shop.xyz//checkout/cancel/",
         success_url = "https://demo-shop.xyz//checkout/thank-you/",
-        automatic_tax = {'enabled': True},
+        automatic_tax = {"enabled": True},
     )
+
+    # on success return htmx relevant headers
     return {
     "headers": {
       "Access-Control-Expose-Headers": "*",

@@ -41,6 +41,7 @@
       {{ partial "base_footer" . }}
     </section>
   </footer>
+  {{ partial "partials/base_canvas"}}
   {{ range $script := .Resources.Match "*.js" }}
     {{ if hugo.IsDevelopment }}
       {{ with . | js.Build }}
