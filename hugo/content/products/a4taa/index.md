@@ -11,7 +11,6 @@ region: ALL
 sku: a4taa
 stripe_price_id: price_1OYphVBC2mcEPes8vIoDSYHX
 stripe_product_id: prod_PNatieSTAhv03A
-stripe_taxcode_id: txcd_99999999
 title: Loop Hero
 ---
 

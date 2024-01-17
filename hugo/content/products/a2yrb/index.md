@@ -10,7 +10,6 @@ region: ALL
 sku: a2yrb
 stripe_price_id: price_1OYphSBC2mcEPes8PrJOAm8q
 stripe_product_id: prod_PNatSiZrXnVwb1
-stripe_taxcode_id: txcd_99999999
 title: Love Esquire
 ---
 

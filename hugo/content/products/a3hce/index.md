@@ -12,7 +12,6 @@ region: USA
 sku: a3hce
 stripe_price_id: price_1OYphPBC2mcEPes8IU482mPF
 stripe_product_id: prod_PNatOyC3dXjux9
-stripe_taxcode_id: txcd_99999999
 title: Monark
 ---
 

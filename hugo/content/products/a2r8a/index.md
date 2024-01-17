@@ -11,7 +11,6 @@ region: ALL
 sku: a2r8a
 stripe_price_id: price_1OYphOBC2mcEPes8ESAvRHcB
 stripe_product_id: prod_PNatpDK6qu12yD
-stripe_taxcode_id: txcd_99999999
 title: 'Astalon: Tears of the Earth'
 ---
 

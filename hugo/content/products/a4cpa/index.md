@@ -8,7 +8,6 @@ region: ALL
 sku: a4cpa
 stripe_price_id: price_1OYphRBC2mcEPes856SUB59q
 stripe_product_id: prod_PNatM7Jd0GfiqT
-stripe_taxcode_id: txcd_99999999
 title: Are You Smarter than a 5th Grader?
 ---
 

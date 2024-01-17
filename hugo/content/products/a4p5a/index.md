@@ -8,7 +8,6 @@ region: ALL
 sku: a4p5a
 stripe_price_id: price_1OYphQBC2mcEPes8ajQb7Hel
 stripe_product_id: prod_PNatDk2qGZSZaQ
-stripe_taxcode_id: txcd_99999999
 title: 'Train Life: A Railway Simulator'
 ---
 

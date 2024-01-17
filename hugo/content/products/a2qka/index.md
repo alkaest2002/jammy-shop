@@ -11,7 +11,6 @@ region: ALL
 sku: a2qka
 stripe_price_id: price_1OYphVBC2mcEPes8MNjMK6v6
 stripe_product_id: prod_PNatNV2APRYvHP
-stripe_taxcode_id: txcd_99999999
 title: Golden Force
 ---
 

@@ -13,7 +13,6 @@ region: ALL
 sku: a3sda
 stripe_price_id: price_1OYphXBC2mcEPes8A7lxN5D4
 stripe_product_id: prod_PNatLr46rqedfh
-stripe_taxcode_id: txcd_99999999
 title: Metroid Prime Remastered
 ---
 

@@ -9,7 +9,6 @@ region: ALL
 sku: a2v2a
 stripe_price_id: price_1OYphOBC2mcEPes8clHdbJPB
 stripe_product_id: prod_PNatSM052Qx0Tb
-stripe_taxcode_id: txcd_99999999
 title: 'Tactics Ogre: Reborn'
 ---
 

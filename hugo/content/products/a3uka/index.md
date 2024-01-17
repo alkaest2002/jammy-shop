@@ -10,7 +10,6 @@ region: ALL
 sku: a3uka
 stripe_price_id: price_1OYphYBC2mcEPes8rQtnOztX
 stripe_product_id: prod_PNatkdlHfyzuE0
-stripe_taxcode_id: txcd_99999999
 title: 'Save me Mr Tako: Definitive Edition'
 ---
 

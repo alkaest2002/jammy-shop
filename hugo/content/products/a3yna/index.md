@@ -9,7 +9,6 @@ region: ALL
 sku: a3yna
 stripe_price_id: price_1OYphWBC2mcEPes893Q5TkQ9
 stripe_product_id: prod_PNatFJ4DHjNySC
-stripe_taxcode_id: txcd_99999999
 title: 'Slime Rancher: Plortable Edition'
 ---
 

@@ -10,7 +10,6 @@ region: ALL
 sku: a2gla
 stripe_price_id: price_1OYphbBC2mcEPes8LPMczdpt
 stripe_product_id: prod_PNatHw564DAgaL
-stripe_taxcode_id: txcd_99999999
 title: Nickelodeon All-Star Brawl
 ---
 

@@ -10,7 +10,6 @@ region: ALL
 sku: a3t9a
 stripe_price_id: price_1OYphRBC2mcEPes8qywJPmKq
 stripe_product_id: prod_PNat28e30Bojct
-stripe_taxcode_id: txcd_99999999
 title: Pathway
 ---
 

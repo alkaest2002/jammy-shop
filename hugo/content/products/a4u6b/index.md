@@ -9,7 +9,6 @@ region: USA
 sku: a4u6b
 stripe_price_id: price_1OYphUBC2mcEPes8CXOhY4t1
 stripe_product_id: prod_PNatBXnKwzPjvF
-stripe_taxcode_id: txcd_99999999
 title: Horgihugh And Friends
 ---
 

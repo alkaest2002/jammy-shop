@@ -10,7 +10,6 @@ region: ALL
 sku: a2mxa
 stripe_price_id: price_1OYphTBC2mcEPes8OVrBtHv1
 stripe_product_id: prod_PNat7YmEAJIwqL
-stripe_taxcode_id: txcd_99999999
 title: Curse of the Sea Rats
 ---
 

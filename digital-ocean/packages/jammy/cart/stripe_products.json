@@ -5,7 +5,7 @@
     "active": true,
     "attributes": [],
     "created": 1705323344,
-    "default_price": "price_1OYphcBC2mcEPes8e1oiy7Y0",
+    "default_price": "price_1OZXnJBC2mcEPes8RNEI5UH1",
     "description": null,
     "features": [],
     "images": [],
@@ -20,9 +20,9 @@
     "tax_code": "txcd_99999999",
     "type": "service",
     "unit_label": null,
-    "updated": 1705323345,
+    "updated": 1705492834,
     "url": "https://demo-shop.xyz/products/a3pga/",
-    "price": 5.0
+    "price": 7.0
   },
   "a2g7a": {
     "id": "prod_PNatsUSs6Hvv8X",

@@ -8,7 +8,6 @@ region: ALL
 sku: a3aye
 stripe_price_id: price_1OYphZBC2mcEPes8HZT4N6lh
 stripe_product_id: prod_PNatUfJu2M99kX
-stripe_taxcode_id: txcd_99999999
 title: Mail Mole - Collector's Edition
 ---
 

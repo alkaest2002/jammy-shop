@@ -9,7 +9,6 @@ region: ALL
 sku: a3pga
 stripe_price_id: price_1OYphcBC2mcEPes8e1oiy7Y0
 stripe_product_id: prod_PNatoYcbbUj58U
-stripe_taxcode_id: txcd_99999999
 title: Aztech Forgotten Gods
 ---
 

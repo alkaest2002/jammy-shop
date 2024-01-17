@@ -9,7 +9,6 @@ region: ALL
 sku: a2lsa
 stripe_price_id: price_1OYphSBC2mcEPes8HdFSjY8l
 stripe_product_id: prod_PNathXnaEGhOAk
-stripe_taxcode_id: txcd_99999999
 title: Tin Hearts
 ---
 

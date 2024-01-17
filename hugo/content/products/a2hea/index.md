@@ -13,7 +13,6 @@ region: ALL
 sku: a2hea
 stripe_price_id: price_1OYphNBC2mcEPes8UXcxQbPZ
 stripe_product_id: prod_PNatf0eP4s6uH7
-stripe_taxcode_id: txcd_99999999
 title: Potion Permit
 ---
 

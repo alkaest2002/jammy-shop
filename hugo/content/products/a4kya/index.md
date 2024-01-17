@@ -9,7 +9,6 @@ region: ALL
 sku: a4kya
 stripe_price_id: price_1OYphZBC2mcEPes8KtOwhRrq
 stripe_product_id: prod_PNatYvEuEXxkW9
-stripe_taxcode_id: txcd_99999999
 title: 'Doom: The Classics Collection'
 ---
 

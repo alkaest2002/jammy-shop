@@ -8,7 +8,6 @@ region: USA,EUR
 sku: a2g7a
 stripe_price_id: price_1OYphcBC2mcEPes8ACvOfja1
 stripe_product_id: prod_PNatsUSs6Hvv8X
-stripe_taxcode_id: txcd_99999999
 title: 'Mario + Rabbids: Sparks of Hope'
 ---
 

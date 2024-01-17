@@ -47,4 +47,4 @@ def main(args):
 
   # notify error
   except Exception as e:
-    return { "body": f"<p>{str(e)}</p>" } 
+    return { "body": f'<p class="text-sm italic">{str(e)}</p>' } 

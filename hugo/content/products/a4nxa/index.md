@@ -10,7 +10,6 @@ region: ALL
 sku: a4nxa
 stripe_price_id: price_1OYphbBC2mcEPes8lQospxqs
 stripe_product_id: prod_PNatLiWlPbMOW1
-stripe_taxcode_id: txcd_99999999
 title: 'DreamWorks Dragons: Legends of The Nine Realms'
 ---
 

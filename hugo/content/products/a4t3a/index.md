@@ -10,7 +10,6 @@ region: ALL
 sku: a4t3a
 stripe_price_id: price_1OYphYBC2mcEPes8jZDOpcox
 stripe_product_id: prod_PNatnp1sk1k3iQ
-stripe_taxcode_id: txcd_99999999
 title: Hello Neighbor 2
 ---
 

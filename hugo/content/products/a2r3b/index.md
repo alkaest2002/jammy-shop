@@ -12,7 +12,6 @@ region: USA
 sku: a2r3b
 stripe_price_id: price_1OYphUBC2mcEPes8fGwpc1N8
 stripe_product_id: prod_PNatOveSqnu9ZY
-stripe_taxcode_id: txcd_99999999
 title: Dragon Star Varnir
 ---
 
