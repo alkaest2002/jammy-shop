@@ -17,5 +17,5 @@ for product_sku, product in stripe_prodcuts.items():
     buffer = BytesIO()
     frontmatter.dump(hugo_md, buffer)
   
-  with open(hugo_md_file, "b") as fout:
+  with open(hugo_md_file, "wb") as fout:
     fout.write(buffer.getbuffer())
