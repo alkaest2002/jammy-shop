@@ -6,6 +6,14 @@ export default (Alpine) => ({
     return this.items.reduce((a,i) => a += i.price * i.quantity, 0);
   },
 
+  get cartForStripe() {
+    return this.items.map((item) => ({
+      sku: item.sku,
+      price_id: item.stripe_price_id,
+      quantity: item.quantity,
+    }));
+  },
+
   findItem(itemToFind) {
     return { 
       item: this.items.find(i => i.sku === itemToFind.sku),
