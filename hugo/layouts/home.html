@@ -1,23 +1,23 @@
 {{ define "main" }}
-  <div class="h-full flex items-center justify-center">
-    <div class="p-9">
-      <div class="mx-auto max-w-2xl py-0 sm:py-24 lg:py-48">
-        <div class="mb-8 flex justify-center">
-          <div
-            class="relative px-3 py-1 text-sm leading-6">
-            Github Repo. <a href="https://github.com/alkaest2002/shop-hugo" class="font-semibold text-pink-700"><span
-                class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </div>
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Demo Shop Site</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Hugo SSG | Stripe Platform | Digital Ocean Functions.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="{{ (.GetPage `products`).Permalink }}"
-              class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 transition">Browse
-              the shop</a>
-          </div>
+<div class="h-full flex items-center justify-center">
+  <div class="p-9">
+    <div class="mx-auto max-w-3xl py-0 sm:py-24 lg:py-48">
+      <div class="mb-8 flex justify-center">
+        <div class="relative px-3 py-1 text-sm leading-6">
+          Github Repo. <a href="https://github.com/alkaest2002/jammy-shop" class="font-semibold text-pink-700"><span
+              class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
+      <div class="text-center">
+        <h1 class="text-4xl font-bold sm:text-6xl">Demo Shop Site</h1>
+        <p class="mt-6 text-lg leading-8 text-slate-500">Hugo SSG | Stripe
+          Platform | Digital Ocean Functions.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="{{ (.GetPage `products`).Permalink }}"
+            class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 transition">Browse
+            the shop</a>
+        </div>
+      </div>
+    </div>
   </div>
-{{ end }}
+  {{ end }}
