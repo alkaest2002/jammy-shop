@@ -7,7 +7,7 @@ price: 5
 publisher: Lienzo
 region: ALL
 sku: a3pga
-stripe_price_id: price_1OYphcBC2mcEPes8e1oiy7Y0
+stripe_price_id: price_1OZXnJBC2mcEPes8RNEI5UH1
 stripe_product_id: prod_PNatoYcbbUj58U
 title: Aztech Forgotten Gods
 ---
