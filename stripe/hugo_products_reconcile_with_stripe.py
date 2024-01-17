@@ -1,7 +1,6 @@
 import json
 import frontmatter
 from io import BytesIO
-
 from pathlib import Path
 
 with open("./stripe_products.json", "r") as fin:
