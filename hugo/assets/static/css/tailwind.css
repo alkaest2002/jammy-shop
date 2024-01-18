@@ -2,26 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-[x-cloak] { display: none !important; }
-
-body {
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: #475569;
-  --pagefind-ui-text: #475569;
-  --pagefind-ui-background: #f7f7f7;
-  --pagefind-ui-border: #64748b;
-  --pagefind-ui-tag: #64748b;
-  --pagefind-ui-border-width: 1px;
-  --pagefind-ui-border-radius: 5px;
-  --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: serif;
-}
-
-.pagefind-ui__result {
-  padding: 0 !important;
-}
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -55,6 +35,18 @@ article p {
   margin-bottom: .9rem;
 }
 
+/*********************************************/
+/* ALPINE RELATED                            */
+/*********************************************/
+
+[x-cloak] { 
+  display: none !important; 
+}
+
+/*********************************************/
+/* HTMX RELATED                              */
+/*********************************************/
+
 .my-indicator{
   display:none;
 }
@@ -63,4 +55,31 @@ article p {
 }
 .htmx-request.my-indicator{
   display:inline;
+}
+
+/*********************************************/
+/* PAGEFIND RELATED                           */
+/*********************************************/
+
+body {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #475569;
+  --pagefind-ui-text: #475569;
+  --pagefind-ui-background: #f7f7f7;
+  --pagefind-ui-border: #64748b;
+  --pagefind-ui-tag: #64748b;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 5px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: sans-serif;
+}
+
+.pagefind-ui__result {
+  gap: 0 !important;
+  padding: calc(15px * var(--pagefind-ui-scale)) 0 calc(20px * var(--pagefind-ui-scale)) !important;
+}
+
+.pagefind-ui__result-thumb {
+  max-width: calc(150px * var(--pagefind-ui-scale)) !important;
 }

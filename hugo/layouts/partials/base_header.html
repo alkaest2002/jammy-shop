@@ -1,14 +1,17 @@
 <nav class="mx-auto p-3">
   <div class="flex justify-center">
     <a href="{{ (.GetPage ``).Permalink }}">
-      <img id="logo-img" src="{{ (resources.Get `/static/images/logo.svg`).RelPermalink }}" alt="logo-image" height="64" width="64">
+      <img id="logo-img" src="{{ (resources.Get `/static/images/logo.svg`).RelPermalink }}" alt="logo-image" height="64"
+        width="64">
     </a>
   </div>
   <div class="flex flex-wrap gap-y-2 justify-center items-center mt-3">
     {{ partial "base_menu.html" (dict "menuID" "main" "page" .) }}
     <a id="cart-summary" class="p-1 px-4 border-2 border-slate-700 rounded-full"
-    href="{{ (.GetPage `checkout/cart`).Permalink }}" x-data="useCartSummary()" x-currency="total"
-    style="transition: all ease-in-out 300ms;">computing...</a>
-    <a href="#" class="ml-3" x-data @click.prevent="$dispatch('canvas-open')">Search</a>
+      href="{{ (.GetPage `checkout/cart`).Permalink }}" x-data="useCartSummary()" x-currency="total"
+      style="transition: all ease-in-out 300ms;">computing...</a>
+    <a href="#" class="ml-3 " x-data @click.prevent="$dispatch('canvas-open')">
+      <img src="{{ ( resources.Get `/static/images/magnifier.svg`).Permalink  }}" alt="search magnifier icon" class="h-6">
+    </a>
   </div>
 </nav>

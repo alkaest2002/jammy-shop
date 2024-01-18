@@ -10,10 +10,10 @@
   {{ with site.Params.description }}
     <meta name="description" content="{{ . }}">
   {{ end }}
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
   {{ with resources.Get "static/css/main.css" }}
     <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
   <script defer src="/pagefind/pagefind-ui.js"></script>
   {{ with resources.Get "static/js/bundle.js" | fingerprint }}
     <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
