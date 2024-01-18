@@ -1,17 +1,16 @@
 <div 
-  x-init="$watch('open', open => {
-    open && new PagefindUI({ element: '#search', showSubResults: false, showImages: true, highlightParam: 'highlight' });
-    $nextTick(() => $refs['search-input'].getElementsByTagName(`input`)[0].focus());
-    })"
+  x-init="
+  new PagefindUI({ element: '#search', showSubResults: false, showImages: true, highlightParam: 'highlight' }); 
+  $watch('open', (open) => { 
+    $nextTick(() => open && $refs['search-component'].getElementsByTagName('input')[0].focus())
+  })"
   x-data="{ open: false }" 
   @keydown.window.escape="open = false"
   @canvas-open.document="open = true" 
   x-show="open"
-  x-ref="dialog" 
   class="relative z-10" 
-  aria-labelledby="slide-over-title" 
   aria-modal="true" 
-  >
+>
   <div class="fixed inset-0 bg-slate-700/80"></div>
   <div class="fixed inset-0 overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
@@ -41,7 +40,7 @@
               </div>
             </div>
             <div class="relative mt-6 flex-1 px-4 sm:px-6">
-             <div id="search" x-ref="search-input"></div>
+             <div id="search" x-ref="search-component"></div>
             </div>
           </div>
         </div>
