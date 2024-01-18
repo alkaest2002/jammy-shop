@@ -2,7 +2,7 @@
   {{ range .paginator.Pages }}
     <div class="grow flex flex-col">
       {{ $itemImage := index (where (.Resources.ByType "image") ".Height" "gt" 80) 0 }}
-      {{ $itemData := partial "checkout/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
+      {{ $itemData := partial "cart/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
       <div class="relative overflow-hidden rounded-t-lg">
         <a href="{{ .Permalink }}">
           <img 
@@ -28,7 +28,7 @@
           {{ end }}
         </div>
         <div class="p-3 pt-0">
-          {{ partial "checkout/cart-actions.html" (dict 
+          {{ partial "cart/cart-actions.html" (dict 
             "IsSection" true
             "itemLink" .Permalink 
             "itemData" $itemData) 

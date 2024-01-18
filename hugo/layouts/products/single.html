@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ $itemImage := index (where (.Resources.ByType "image") ".Height" "gt" 80) 0 }}
-  {{ $itemData := partial "checkout/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
+  {{ $itemData := partial "cart/build-item-data-for-cart" (dict "page" . "itemImage" $itemImage) }}
   <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" data-pagefind-body>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-3">
       <div class="mb-3">
@@ -33,7 +33,7 @@
         {{ if in .Params.features "new"  }}
           <span class="p-2 px-6 bg-gray-700 text-white rounded-full text-sm">Product is new!</span>
         {{ end }}
-        {{ partial "checkout/cart-actions.html" (dict 
+        {{ partial "cart/cart-actions.html" (dict 
           "IsSection" false
           "itemLink" .Permalink 
           "itemData" $itemData) 
