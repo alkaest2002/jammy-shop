@@ -1,71 +1,73 @@
-/* cresits to https://victoryoalli.me/creating-a-carousel-with-tailwind-css-and-alpinejs */
 export default () => ({
+  
   currentSlide: 0,
-  skip: 1,
+  numberOfSlides: 0,
   atBeginning: false,
   atEnd: false,
   autoSlideInterval: null,
-
+  baseScroll: 0,
+  maxScroll: 0,
+  get currentScroll() {
+    return this.$refs.slider.scrollLeft;
+  },
+  
   init() {
+    this.numberOfSlides = this.$refs.slider.children.length;
+    this.baseScroll = this.$refs.slider.getBoundingClientRect().width;
+    this.maxScroll = this.baseScroll * (this.numberOfSlides - 1);
+    this.$watch('currentSlide', (value) => {
+      this.$refs.slider.scrollTo({ left: value * this.baseScroll, behavior: "smooth" });
+    });
     this.startAutoSlide();
   },
-  startAutoSlide() {
-    this.autoSlideInterval = setInterval(() => {
-      this.next();
-    }, 5000);
+
+  destroy() {
+    this.stopAutoSlide();
   },
+  
+  startAutoSlide() {
+    this.autoSlideInterval = setInterval(() => { this.next() }, 555555000);
+  },
+  
   stopAutoSlide() {
     clearInterval(this.autoSlideInterval);
   },
+  
   goToSlide(index) {
-    let slider = this.$refs.slider;
-    let offset = slider.firstElementChild.getBoundingClientRect().width;
-    slider.scrollTo({ left: offset * index, behavior: "smooth" });
+    this.currentSlide = index;
   },
+  
   next() {
-    let slider = this.$refs.slider;
-    let current = slider.scrollLeft;
-    let offset = slider.firstElementChild.getBoundingClientRect().width;
-    let maxScroll = offset * (slider.children.length - 1);
-
-    current && current + offset >= maxScroll
-      ? slider.scrollTo({ left: 0, behavior: "smooth" })
-      : slider.scrollBy({ left: offset * this.skip, behavior: "smooth" });
+    if (this.currentSlide +1 === this.numberOfSlides) return this.currentSlide = 0;
+    this.currentSlide += 1;
   },
+  
   prev() {
-    let slider = this.$refs.slider;
-    let current = slider.scrollLeft;
-    let offset = slider.firstElementChild.getBoundingClientRect().width;
-    let maxScroll = offset * (slider.children.length - 1);
-
-    current <= 0
-      ? slider.scrollTo({ left: maxScroll, behavior: "smooth" })
-      : slider.scrollBy({ left: -offset * this.skip, behavior: "smooth" });
+    if (this.currentSlide === 0) return this.currentSlide = this.numberOfSlides -1;
+    this.currentSlide -= 1;
   },
+  
   updateButtonStates() {
-    let slideEls = this.$el.parentElement.children;
+    let slideEls = this.$refs.slider.children;
     this.atBeginning = slideEls[0] === this.$el;
     this.atEnd = slideEls[slideEls.length-1] === this.$el;
   },
+  
   focusableWhenVisible: {
-    "x-intersect:enter"() {
+    ["x-intersect:enter"]() {
       this.$el.removeAttribute("tabindex");
     },
-    "x-intersect:leave"() {
+    ["x-intersect:leave"]() {
       this.$el.setAttribute("tabindex", "-1");
     },
   },
+  
   disableNextAndPreviousButtons: {
-    "x-intersect:enter.threshold.05"() {
+    ["x-intersect:enter.threshold.05"]() {
       this.updateButtonStates();
     },
-    "x-intersect:leave.threshold.05"() {
+    ["x-intersect:leave.threshold.05"]() {
       this.updateButtonStates();
     },
-  },
-  updateCurrentSlide() {
-    let slider = this.$refs.slider;
-    let offset = slider.firstElementChild.getBoundingClientRect().width;
-    this.currentSlide = Math.round(slider.scrollLeft / offset);
-  },
+  }
 });

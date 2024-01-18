@@ -1,10 +1,13 @@
 <div class="relative">
   <div x-data="useCarousel()" @mouseover="stopAutoSlide()" @mouseout="startAutoSlide()" class="flex flex-col w-full">
-    <div x-on:keydown.right="next" x-on:keydown.left="prev" tabindex="0" role="region" aria-labelledby="carousel-label"
+    
+    <div x-on:keydown.window.right="next" x-on:keydown.window.left="prev" tabindex="0" role="region" aria-labelledby="carousel-label"
       class="flex space-x-6">
+      
       <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
       <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
-      <ul x-ref="slider" @scroll="updateCurrentSlide" tabindex="0" role="listbox"
+      
+      <ul x-ref="slider" tabindex="0" role="listbox"
         aria-labelledby="carousel-content-label" class="flex w-full overflow-x-hidden snap-x snap-mandatory">
         {{ range $index, $image := (where (.Resources.ByType "image") ".Height" "gt" 80) }}
           <li x-bind="disableNextAndPreviousButtons"
@@ -38,17 +41,17 @@
       </button>
       
       <!-- Indicators -->
-      <!--
-      <div class="w-full bottom-12 lg:bottom-24">
-        <div class="flex justify-center space-x-2">
+      <div class="mx-3">
+        <div class="flex gap-2 justify-center items-center">
           <template x-for="(slide, index) in Array.from($refs.slider.children)" :key="index">
-            <button @click="goToSlide(index)"
-              :class="{'bg-gray-500': currentSlide === index, 'bg-gray-300': currentSlide !== index}"
-              class="w-3 h-3 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400"></button>
+            <div @click="goToSlide(index)"
+              class="w-3 h-3 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400 cursor-pointer"
+              :class="{'bg-gray-700': currentSlide === index, 'bg-gray-400': currentSlide !== index }"
+              >
+          </div>
           </template>
         </div>
       </div>
-      -->
 
       <!-- Next Button -->
       <button x-on:click="next" class="text-6xl" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0">
