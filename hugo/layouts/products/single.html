@@ -4,16 +4,7 @@
   <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" data-pagefind-body>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-3">
       <div class="mb-3">
-        <div class="w-full relative rounded-lg">
-          <img
-            data-pagefind-meta="image[src], image_alt[alt]"
-            src="{{ $itemImage.RelPermalink }}" 
-            alt="image of {{ .Title }}" 
-            class="w-96 bg-gray-50 rounded-lg ring-1 ring-gray-300"
-            height="{{ $itemImage.Height }}" 
-            width="{{ $itemImage.Width }}"
-          >
-        </div>
+        {{ partial "products/carousel" . }}
       </div>
       <article class="col-span-2">
         <h1 class="text-2xl font-bold">SKU {{ upper .Params.sku }} - {{ .Title }}</h1>
@@ -54,8 +45,8 @@
           </ul>
         </div>
         {{ end }}
-
       </article>
+      
     </div>
   </div>
 {{ end }}

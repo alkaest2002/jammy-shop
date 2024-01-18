@@ -10,7 +10,7 @@
     <a id="cart-summary" class="p-1 px-4 border-2 border-slate-700 rounded-full"
       href="{{ (.GetPage `checkout/cart`).Permalink }}" x-data="useCartSummary()" x-currency="total"
       style="transition: all ease-in-out 300ms;">computing...</a>
-    <a href="#" class="ml-3 " x-data @click.prevent="$dispatch('canvas-open')">
+    <a href="#" class="ml-3" x-data @click.prevent="$dispatch('canvas-open')">
       <img src="{{ ( resources.Get `/static/images/magnifier.svg`).Permalink  }}" alt="search magnifier icon" class="h-6">
     </a>
   </div>
