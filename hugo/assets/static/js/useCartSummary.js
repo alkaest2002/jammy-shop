@@ -10,7 +10,7 @@ export default () => ({
     this.$watch("$store.cartStore.items", () => {
       this.total = this.$store.cartStore.cartTotal;
       this.$el.classList.add(glowClass);
-      setTimeout(() => {
+      this.timeoutId = setTimeout(() => {
         this.$el.classList.remove(glowClass);
       }, 300);
     })

@@ -10,8 +10,7 @@
       <ul x-ref="slider" tabindex="0" role="listbox"
         aria-labelledby="carousel-content-label" class="flex w-full overflow-x-hidden snap-x snap-mandatory">
         {{ range $index, $image := (where (.Resources.ByType "image") ".Height" "gt" 80) }}
-          <li x-bind="disableNextAndPreviousButtons"
-            class="flex flex-col items-center justify-center w-full p-0 shrink-0 snap-start" role="option">
+          <li class="flex flex-col items-center justify-center w-full p-0 shrink-0 snap-start" role="option">
             <img
                 data-pagefind-meta="image[src], image_alt[alt]"
                 src="{{ $image.RelPermalink }}" 
@@ -20,17 +19,16 @@
                 height="{{ $image.Height }}" 
                 width="{{ $image.Width }}"
             >
-            <button x-bind="focusableWhenVisible" class="px-4 py-2 text-sm"></button>
           </li>
         {{ end }}
       </ul>
     </div>
     
     <!-- NAVIGATION  -->
-    <div class="flex justify-center items-center w-full h-full p-1 rounded-lg">
+    <div class="flex justify-center items-center w-full h-full p-1 mt-3 rounded-lg">
       
       <!-- Prev Button -->
-      <button x-on:click="prev" class="text-6xl" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0">
+      <button x-on:click="prev" class="text-6xl">
         <span aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-5 text-gray-300 lg:h-8 hover:text-gray-400"
             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
@@ -54,7 +52,7 @@
       </div>
 
       <!-- Next Button -->
-      <button x-on:click="next" class="text-6xl" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0">
+      <button x-on:click="next" class="text-6xl">
         <span aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-5 text-gray-300 lg:h-8 hover:text-gray-400"
             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
