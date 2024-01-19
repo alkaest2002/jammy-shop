@@ -14,6 +14,10 @@
   {{ with resources.Get "static/css/main.css" }}
     <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
+  <script defer src="/pagefind/pagefind-ui.js"></script>
+  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{ end }}
 </head>
 
 <body 
@@ -38,10 +42,6 @@
     </section>
   </footer>
   {{ partial "partials/base_search"}}
-  <script src="/pagefind/pagefind-ui.js"></script>
-  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
-    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
-  {{ end }}
   {{ range $script := .Resources.Match "*.js" }}
     {{ if hugo.IsDevelopment }}
       {{ with . | js.Build }}
