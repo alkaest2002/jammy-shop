@@ -1,5 +1,4 @@
-export default (durationOfAnimation = 5000) => ({
-  
+export default (durationOfAnimation = 10000) => ({
   durationOfAnimation,
   intervalID: null,
   currentSlide: 0,
@@ -10,9 +9,7 @@ export default (durationOfAnimation = 5000) => ({
     const slider = this.$refs.slider;
     this.numberOfSlides = slider.children.length;
     this.baseScroll = slider.getBoundingClientRect().width;
-    this.$watch("currentSlide", (value) => {
-      slider.scrollTo({ left: value * this.baseScroll, behavior: "smooth" });
-    });
+    this.$watch("currentSlide", (v) => slider.scrollTo({ left: v * this.baseScroll, behavior: "smooth" }));
     this.startAutoSlide();
   },
 
@@ -21,7 +18,9 @@ export default (durationOfAnimation = 5000) => ({
   },
 
   startAutoSlide() {
-    this.intervalID = setInterval(() => { this.next()}, this.durationOfAnimation);
+    this.intervalID = setInterval(() => {
+      this.next();
+    }, this.durationOfAnimation);
   },
 
   stopAutoSlide() {
@@ -33,14 +32,10 @@ export default (durationOfAnimation = 5000) => ({
   },
 
   next() {
-    this.currentSlide = this.currentSlide + 1 === this.numberOfSlides 
-      ? 0 
-      : ++this.currentSlide;
+    this.currentSlide = (this.currentSlide + 1) % this.numberOfSlides;
   },
 
   prev() {
-    this.currentSlide = this.currentSlide === 0 
-      ? this.numberOfSlides - 1 
-      : --this.currentSlide;
+    this.currentSlide = (this.currentSlide === 0) * this.numberOfSlides + (this.currentSlide -1)
   },
 });
