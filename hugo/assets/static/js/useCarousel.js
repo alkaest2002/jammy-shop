@@ -1,7 +1,7 @@
-export default () => ({
+export default (durationOfAnimation = 5000) => ({
   
+  durationOfAnimation,
   intervalID: null,
-  durationOfAnimation: 5000,
   currentSlide: 0,
   numberOfSlides: 0,
   baseScroll: 0,
