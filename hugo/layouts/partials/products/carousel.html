@@ -42,7 +42,7 @@
           <div class="flex gap-2 justify-center items-center">
             <template x-for="(slide, index) in Array.from($refs.slider.children)" :key="index">
               <div @click="goToSlide(index)"
-                class="w-3 h-3 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400 cursor-pointer"
+                class="w-3 h-3 rounded-full cursor-pointer"
                 :class="{'bg-gray-700': currentSlide === index, 'bg-gray-400': currentSlide !== index }"
                 >
             </div>

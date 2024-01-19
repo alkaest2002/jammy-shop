@@ -5,17 +5,13 @@ export default () => ({
   currentSlide: 0,
   numberOfSlides: 0,
   baseScroll: 0,
-  maxScroll: 0,
 
   init() {
-    this.numberOfSlides = this.$refs.slider.children.length;
-    this.baseScroll = this.$refs.slider.getBoundingClientRect().width;
-    this.maxScroll = this.baseScroll * (this.numberOfSlides - 1);
+    const slider = this.$refs.slider;
+    this.numberOfSlides = slider.children.length;
+    this.baseScroll = slider.getBoundingClientRect().width;
     this.$watch("currentSlide", (value) => {
-      this.$refs.slider.scrollTo({
-        left: value * this.baseScroll,
-        behavior: "smooth",
-      });
+      slider.scrollTo({ left: value * this.baseScroll, behavior: "smooth" });
     });
     this.startAutoSlide();
   },
@@ -33,19 +29,18 @@ export default () => ({
   },
 
   goToSlide(index) {
-    if (index >= 0 || index <= this.numberOfSlides) 
-      this.currentSlide = index;
+    this.currentSlide = index;
   },
 
   next() {
-    if (this.currentSlide + 1 === this.numberOfSlides)
-      return (this.currentSlide = 0);
-    this.currentSlide += 1;
+    this.currentSlide = this.currentSlide + 1 === this.numberOfSlides 
+      ? 0 
+      : ++this.currentSlide;
   },
 
   prev() {
-    if (this.currentSlide === 0)
-      return (this.currentSlide = this.numberOfSlides - 1);
-    this.currentSlide -= 1;
+    this.currentSlide = this.currentSlide === 0 
+      ? this.numberOfSlides - 1 
+      : --this.currentSlide;
   },
 });
