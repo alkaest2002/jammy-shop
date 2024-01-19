@@ -13,7 +13,7 @@
         {{ range $index, $image := $images }}
           <li class="flex flex-col items-center justify-center w-full p-0 shrink-0 snap-start" role="option">
             <img
-                data-pagefind-meta="image[src], image_alt[alt]"
+                {{ if eq $index 0 }} data-pagefind-meta="image[src], image_alt[alt]" {{ end }}
                 src="{{ $image.RelPermalink }}" 
                 alt="product image {{ $index }}" 
                 class="w-96 bg-gray-50 rounded-lg ring-1 ring-gray-300"
