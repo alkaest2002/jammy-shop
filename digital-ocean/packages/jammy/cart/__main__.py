@@ -37,9 +37,9 @@ def main(args):
         ],
         mode="payment",
         shipping_address_collection = { "allowed_countries": ["US",  "IT"] },
-        cancel_url = "https://demo-shop.xyz//checkout/cancel/",
-        success_url = "https://demo-shop.xyz//checkout/thank-you/",
-        automatic_tax = {"enabled": True},
+        cancel_url = "https://demo-shop.xyz/checkout/cancel/",
+        success_url = "https://demo-shop.xyz/checkout/thank-you/",
+        automatic_tax = { "enabled": True },
     )
 
     # on success return htmx relevant headers
