@@ -9,7 +9,9 @@ export default (durationOfAnimation = 10000) => ({
     const slider = this.$refs.slider;
     this.numberOfSlides = slider.children.length;
     this.baseScroll = slider.getBoundingClientRect().width;
-    this.$watch("currentSlide", (v) => slider.scrollTo({ left: v * this.baseScroll, behavior: "smooth" }));
+    this.$watch("currentSlide", (v) =>
+      slider.scrollTo({ left: v * this.baseScroll, behavior: "smooth" })
+    );
     this.startAutoSlide();
   },
 
@@ -36,6 +38,7 @@ export default (durationOfAnimation = 10000) => ({
   },
 
   prev() {
-    this.currentSlide = (this.currentSlide === 0) * this.numberOfSlides + (this.currentSlide -1)
+    this.currentSlide =
+      (this.currentSlide === 0) * this.numberOfSlides + (this.currentSlide - 1);
   },
 });
