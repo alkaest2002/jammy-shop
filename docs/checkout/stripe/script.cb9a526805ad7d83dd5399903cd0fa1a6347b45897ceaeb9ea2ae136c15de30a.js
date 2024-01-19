@@ -1,0 +1,1 @@
+(()=>{var t=Alpine.store("cartStore");document.body.addEventListener("htmx:afterRequest",function(e){let o=e.detail.xhr.getResponseHeader("Session-Id"),s=e.detail.xhr.getResponseHeader("Session-Url");t.stripeSessionId=o,t.stripeSessionUrl=s,window.location.replace(s)});})();

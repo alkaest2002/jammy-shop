@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16">
+    <h1 class="text-xl font-bold mb-3">Stripe session was cancelled</h1>
+    <p>You have cancelled the payment session. Feel free to update or wipe your cart out</p>
+    <p><a href="{{ (.GetPage `checkout/cart`).Permalink }}" class="text-pink-700">Go to cart now</a></p>
+  </div>
+{{ end }}

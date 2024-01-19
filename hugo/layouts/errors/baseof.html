@@ -11,10 +11,7 @@
     <meta name="description" content="{{ . }}">
   {{ end }}
   {{ with resources.Get "static/css/main.css" }}
-    <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-  {{ end }}
-  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
-    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+    <link rel="stylesheet" media="screen" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
 </head>
 
