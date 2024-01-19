@@ -44,10 +44,12 @@ def main(args):
 
     # on success return htmx relevant headers
     return {
-    "headers": {
-      "Access-Control-Expose-Headers": "*",
-      "HX-Redirect": checkout_session.url,
-    },
+      "headers": {
+        "Access-Control-Expose-Headers": "*",
+        "Session-Url": checkout_session.url,
+        "Session-Id": checkout_session.id,
+      },
+      "body": ""
   }
 
   # notify error

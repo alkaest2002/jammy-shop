@@ -1,6 +1,8 @@
 export default (Alpine) => ({ 
   
   items: Alpine.$persist([]),
+  stripeSessionId: Alpine.$persist(null),
+  stripeSessionUrl: Alpine.$persist(null),
 
   get cartTotal() {
     return this.items.reduce((a,i) => a += i.price * i.quantity, 0);
