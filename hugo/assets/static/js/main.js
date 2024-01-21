@@ -5,12 +5,11 @@ import cartStore from "./cartStore";
 import useCart from "./useCart";
 import useCartSummary from "./useCartSummary";
 import useSearch from "./useSearch";
-import useCarousel from "./useCarousel";
 import { jsonEnc } from "./custom-htmx";
 import { formatCurrency } from "./custom-alpine";
 
 window.Htmx = Htmx;
-Htmx.defineExtension('json-enc', jsonEnc);
+Htmx.defineExtension("json-enc", jsonEnc);
 
 window.Alpine = Alpine;
 Alpine.directive("currency", formatCurrency);
@@ -19,5 +18,4 @@ Alpine.store("cartStore", cartStore(Alpine));
 Alpine.data("useCart", useCart);
 Alpine.data("useCartSummary", useCartSummary);
 Alpine.data("useSearch", useSearch);
-Alpine.data("useCarousel", useCarousel);
 Alpine.start();
