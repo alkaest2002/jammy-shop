@@ -14,7 +14,10 @@
   {{ with resources.Get "static/css/main.css" }}
     <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
-  {{ with resources.Get "static/js/bundle.js" | fingerprint }}
+  {{ with resources.Get "static/js/bundle/alpine/alpine-main.js" | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{ end }}
+  {{ with resources.Get "static/js/bundle/htmx/htmx-main.js" | fingerprint }}
     <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
   {{ end }}
 </head>
