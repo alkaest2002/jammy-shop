@@ -1,8 +1,13 @@
 <div class="flex flex-col gap-2 mt-3" x-data="useCart()">
-  <div class="grow text-xs p-1" :class="{ 'invisible' : !cart.getItemProp({{ .itemData }}, 'quantity') }" x-transition
-    x-cloak>
-    <span x-text="cart.getItemProp({{ .itemData }}, 'quantity')"></span> <span>in bag - </span>
-    <a class="text-sky-600" href="#" @click.prevent="cart.removeItem({{ .itemData }}, true)">remove</a>
+  <div 
+    class="grow text-xs p-1" 
+    x-transition:enter.duration.500ms
+    x-transition:enter.leave.500ms
+    x-show="cart.getItemProp({{ .itemData }}, 'quantity')"
+  >
+    <span x-text="cart.getItemProp({{ .itemData }}, 'quantity')"></span>
+    <span>in <a href="{{ (site.GetPage `checkout/cart`).Permalink }}" class="text-pink-700">bag</a> &mdash; </span>
+    <a class="text-pink-700" href="#" @click.prevent="cart.removeItem({{ .itemData }}, true)">remove</a>
   </div>
   <div class="flex flex-wrap gap-2">
     {{ if .IsSection }}

@@ -30,7 +30,7 @@
 >
   <header>
     <section class="relative container mx-auto z-10">
-      {{ partial "base_header" . }}
+      {{ partial "base-header" . }}
     </section>
   </header>
   <main class="grow">
@@ -40,10 +40,10 @@
   </main>
   <footer>
     <section  class="container mx-auto">
-      {{ partial "base_footer" . }}
+      {{ partial "base-footer" . }}
     </section>
   </footer>
-  {{ partial "partials/base_search"}}
+  {{ partial "partials/base-search" . }}
   <script src="/pagefind/pagefind-ui.js"></script>
   {{ range $script := .Resources.Match "*.js" }}
     {{ if hugo.IsDevelopment }}
