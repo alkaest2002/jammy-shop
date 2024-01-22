@@ -40,6 +40,10 @@ def main(args):
         cancel_url = "https://demo-shop.xyz/checkout/cancel/",
         success_url = "https://demo-shop.xyz/checkout/thank-you/",
         automatic_tax = { "enabled": True },
+        shipping_options=[
+          { "shipping_rate": "shr_1ObMubIq1JpnhegEQCh2YD8w"},
+          { "shipping_rate": "shr_1ObMvIIq1JpnhegEWVoxp4GA"},
+        ]
     )
 
     # on success return htmx relevant headers

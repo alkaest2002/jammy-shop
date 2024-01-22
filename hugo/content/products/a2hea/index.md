@@ -11,8 +11,8 @@ price: 35
 publisher: PQube
 region: ALL
 sku: a2hea
-stripe_price_id: price_1OYphNBC2mcEPes8UXcxQbPZ
-stripe_product_id: prod_PNatf0eP4s6uH7
+stripe_price_id: price_1ObMpLIq1JpnhegEPvyV1zXe
+stripe_product_id: prod_PQDF476Lm8tFTc
 title: Potion Permit
 ---
 

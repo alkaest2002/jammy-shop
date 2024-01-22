@@ -9,8 +9,8 @@ price: 20
 publisher: DANGEN Entertainment
 region: ALL
 sku: a2r8a
-stripe_price_id: price_1OYphOBC2mcEPes8ESAvRHcB
-stripe_product_id: prod_PNatpDK6qu12yD
+stripe_price_id: price_1ObMpMIq1JpnhegEJHpAIYID
+stripe_product_id: prod_PQDFvIH5c4D9JG
 title: 'Astalon: Tears of the Earth'
 ---
 

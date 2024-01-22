@@ -7,8 +7,8 @@ price: 10
 publisher: Monomi Park
 region: ALL
 sku: a3yna
-stripe_price_id: price_1OYphWBC2mcEPes893Q5TkQ9
-stripe_product_id: prod_PNatFJ4DHjNySC
+stripe_price_id: price_1ObMpSIq1JpnhegE2rnU26A1
+stripe_product_id: prod_PQDFK3AiV64jtX
 title: 'Slime Rancher: Plortable Edition'
 ---
 

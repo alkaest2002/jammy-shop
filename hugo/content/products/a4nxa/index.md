@@ -10,8 +10,8 @@ price: 30
 publisher: Outright Games
 region: ALL
 sku: a4nxa
-stripe_price_id: price_1OYphbBC2mcEPes8lQospxqs
-stripe_product_id: prod_PNatLiWlPbMOW1
+stripe_price_id: price_1ObMpXIq1JpnhegELLaNbMKZ
+stripe_product_id: prod_PQDGmQOrc2CljT
 title: 'DreamWorks Dragons: Legends of The Nine Realms'
 ---
 

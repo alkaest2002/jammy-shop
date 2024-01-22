@@ -8,8 +8,8 @@ price: 10
 publisher: PQube
 region: ALL
 sku: a2mxa
-stripe_price_id: price_1OYphTBC2mcEPes8OVrBtHv1
-stripe_product_id: prod_PNat7YmEAJIwqL
+stripe_price_id: price_1ObMpPIq1JpnhegEV45BjMOZ
+stripe_product_id: prod_PQDFGG7RRQAOp9
 title: Curse of the Sea Rats
 ---
 

@@ -9,8 +9,8 @@ price: 15
 publisher: Devolver Digital
 region: ALL
 sku: a4taa
-stripe_price_id: price_1OYphVBC2mcEPes8vIoDSYHX
-stripe_product_id: prod_PNatieSTAhv03A
+stripe_price_id: price_1ObMpRIq1JpnhegE3L5HotMU
+stripe_product_id: prod_PQDFJzpAK2Ha1c
 title: Loop Hero
 ---
 

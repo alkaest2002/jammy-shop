@@ -8,8 +8,8 @@ price: 40
 publisher: Chucklefish
 region: ALL
 sku: a3t9a
-stripe_price_id: price_1OYphRBC2mcEPes8qywJPmKq
-stripe_product_id: prod_PNat28e30Bojct
+stripe_price_id: price_1ObMpNIq1JpnhegExC5SiZCb
+stripe_product_id: prod_PQDFgD9RXdMFxQ
 title: Pathway
 ---
 

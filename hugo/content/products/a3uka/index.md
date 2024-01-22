@@ -8,8 +8,8 @@ price: 10
 publisher: Limited Run Games
 region: ALL
 sku: a3uka
-stripe_price_id: price_1OYphYBC2mcEPes8rQtnOztX
-stripe_product_id: prod_PNatkdlHfyzuE0
+stripe_price_id: price_1ObMpTIq1JpnhegEmUshF6aT
+stripe_product_id: prod_PQDFEEehMu6NIk
 title: 'Save me Mr Tako: Definitive Edition'
 ---
 

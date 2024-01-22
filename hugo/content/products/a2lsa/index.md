@@ -9,8 +9,8 @@ price: 50
 publisher: Wired Productions
 region: ALL
 sku: a2lsa
-stripe_price_id: price_1OYphSBC2mcEPes8HdFSjY8l
-stripe_product_id: prod_PNathXnaEGhOAk
+stripe_price_id: price_1ObMpOIq1JpnhegE1IrzEsQR
+stripe_product_id: prod_PQDFEfsP9FnCWI
 title: Tin Hearts
 ---
 

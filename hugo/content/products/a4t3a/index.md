@@ -8,8 +8,8 @@ price: 15
 publisher: tinyBuild Games
 region: ALL
 sku: a4t3a
-stripe_price_id: price_1OYphYBC2mcEPes8jZDOpcox
-stripe_product_id: prod_PNatnp1sk1k3iQ
+stripe_price_id: price_1ObMpUIq1JpnhegENU4e0aqi
+stripe_product_id: prod_PQDGEZUz9BQpL7
 title: Hello Neighbor 2
 ---
 

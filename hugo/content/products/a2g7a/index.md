@@ -6,8 +6,8 @@ price: 30
 publisher: Ubisoft
 region: USA,EUR
 sku: a2g7a
-stripe_price_id: price_1OYphcBC2mcEPes8ACvOfja1
-stripe_product_id: prod_PNatsUSs6Hvv8X
+stripe_price_id: price_1ObMpXIq1JpnhegEeIislBLN
+stripe_product_id: prod_PQDGVym867ibem
 title: 'Mario + Rabbids: Sparks of Hope'
 ---
 

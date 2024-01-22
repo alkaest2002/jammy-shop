@@ -6,8 +6,8 @@ price: 45
 publisher: SelectaPlay
 region: ALL
 sku: a3aye
-stripe_price_id: price_1OYphZBC2mcEPes8HZT4N6lh
-stripe_product_id: prod_PNatUfJu2M99kX
+stripe_price_id: price_1ObMpVIq1JpnhegES2MqOgin
+stripe_product_id: prod_PQDGsZdWfHrA6X
 title: Mail Mole - Collector's Edition
 ---
 

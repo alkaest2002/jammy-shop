@@ -9,8 +9,8 @@ price: 55
 publisher: No Gravity Games
 region: ALL
 sku: a2qka
-stripe_price_id: price_1OYphVBC2mcEPes8MNjMK6v6
-stripe_product_id: prod_PNatNV2APRYvHP
+stripe_price_id: price_1ObMpRIq1JpnhegEqLcJiUmZ
+stripe_product_id: prod_PQDF2BZOvgKVbS
 title: Golden Force
 ---
 

@@ -6,8 +6,8 @@ price: 20
 publisher: Nacon
 region: ALL
 sku: a4p5a
-stripe_price_id: price_1OYphQBC2mcEPes8ajQb7Hel
-stripe_product_id: prod_PNatDk2qGZSZaQ
+stripe_price_id: price_1ObMpNIq1JpnhegEtgx7QC29
+stripe_product_id: prod_PQDFHS07aS41e9
 title: 'Train Life: A Railway Simulator'
 ---
 

@@ -7,8 +7,8 @@ price: 45
 publisher: Aksys Games
 region: USA
 sku: a4u6b
-stripe_price_id: price_1OYphUBC2mcEPes8CXOhY4t1
-stripe_product_id: prod_PNatBXnKwzPjvF
+stripe_price_id: price_1ObMpQIq1JpnhegE0pe9S29m
+stripe_product_id: prod_PQDFjeakStWyPZ
 title: Horgihugh And Friends
 ---
 

@@ -7,8 +7,8 @@ price: 55
 publisher: null
 region: ALL
 sku: a4kya
-stripe_price_id: price_1OYphZBC2mcEPes8KtOwhRrq
-stripe_product_id: prod_PNatYvEuEXxkW9
+stripe_price_id: price_1ObMpVIq1JpnhegEYiPnrEUP
+stripe_product_id: prod_PQDGBpxMG64xlr
 title: 'Doom: The Classics Collection'
 ---
 

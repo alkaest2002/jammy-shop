@@ -12,7 +12,6 @@
     "sku": "a3jxa",
     "stripe_price_id": "price_1OYphMBC2mcEPes8Z1jiZ97N",
     "stripe_product_id": "prod_PNatl7boCsS554",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Blaster Master Zero 3"
   },
   "a2hea": {
@@ -32,7 +31,6 @@
     "sku": "a2hea",
     "stripe_price_id": "price_1OYphNBC2mcEPes8UXcxQbPZ",
     "stripe_product_id": "prod_PNatf0eP4s6uH7",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Potion Permit"
   },
   "a2v2a": {
@@ -47,7 +45,6 @@
     "sku": "a2v2a",
     "stripe_price_id": "price_1OYphOBC2mcEPes8clHdbJPB",
     "stripe_product_id": "prod_PNatSM052Qx0Tb",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Tactics Ogre: Reborn"
   },
   "a2r8a": {
@@ -64,7 +61,6 @@
     "sku": "a2r8a",
     "stripe_price_id": "price_1OYphOBC2mcEPes8ESAvRHcB",
     "stripe_product_id": "prod_PNatpDK6qu12yD",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Astalon: Tears of the Earth"
   },
   "a3hce": {
@@ -83,7 +79,6 @@
     "sku": "a3hce",
     "stripe_price_id": "price_1OYphPBC2mcEPes8IU482mPF",
     "stripe_product_id": "prod_PNatOyC3dXjux9",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Monark"
   },
   "a4p5a": {
@@ -97,7 +92,6 @@
     "sku": "a4p5a",
     "stripe_price_id": "price_1OYphQBC2mcEPes8ajQb7Hel",
     "stripe_product_id": "prod_PNatDk2qGZSZaQ",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Train Life: A Railway Simulator"
   },
   "a3t9a": {
@@ -113,7 +107,6 @@
     "sku": "a3t9a",
     "stripe_price_id": "price_1OYphRBC2mcEPes8qywJPmKq",
     "stripe_product_id": "prod_PNat28e30Bojct",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Pathway"
   },
   "a4cpa": {
@@ -127,10 +120,12 @@
     "sku": "a4cpa",
     "stripe_price_id": "price_1OYphRBC2mcEPes856SUB59q",
     "stripe_product_id": "prod_PNatM7Jd0GfiqT",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Are You Smarter than a 5th Grader?"
   },
   "a2lsa": {
+    "features": [
+      "new"
+    ],
     "genres": [
       "puzzle",
       "platformer"
@@ -142,7 +137,6 @@
     "sku": "a2lsa",
     "stripe_price_id": "price_1OYphSBC2mcEPes8HdFSjY8l",
     "stripe_product_id": "prod_PNathXnaEGhOAk",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Tin Hearts"
   },
   "a2yrb": {
@@ -158,7 +152,6 @@
     "sku": "a2yrb",
     "stripe_price_id": "price_1OYphSBC2mcEPes8PrJOAm8q",
     "stripe_product_id": "prod_PNatSiZrXnVwb1",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Love Esquire"
   },
   "a2mxa": {
@@ -174,7 +167,6 @@
     "sku": "a2mxa",
     "stripe_price_id": "price_1OYphTBC2mcEPes8OVrBtHv1",
     "stripe_product_id": "prod_PNat7YmEAJIwqL",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Curse of the Sea Rats"
   },
   "a2r3b": {
@@ -193,7 +185,6 @@
     "sku": "a2r3b",
     "stripe_price_id": "price_1OYphUBC2mcEPes8fGwpc1N8",
     "stripe_product_id": "prod_PNatOveSqnu9ZY",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Dragon Star Varnir"
   },
   "a4u6b": {
@@ -208,7 +199,6 @@
     "sku": "a4u6b",
     "stripe_price_id": "price_1OYphUBC2mcEPes8CXOhY4t1",
     "stripe_product_id": "prod_PNatBXnKwzPjvF",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Horgihugh And Friends"
   },
   "a4taa": {
@@ -225,7 +215,6 @@
     "sku": "a4taa",
     "stripe_price_id": "price_1OYphVBC2mcEPes8vIoDSYHX",
     "stripe_product_id": "prod_PNatieSTAhv03A",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Loop Hero"
   },
   "a2qka": {
@@ -242,7 +231,6 @@
     "sku": "a2qka",
     "stripe_price_id": "price_1OYphVBC2mcEPes8MNjMK6v6",
     "stripe_product_id": "prod_PNatNV2APRYvHP",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Golden Force"
   },
   "a3yna": {
@@ -257,7 +245,6 @@
     "sku": "a3yna",
     "stripe_price_id": "price_1OYphWBC2mcEPes893Q5TkQ9",
     "stripe_product_id": "prod_PNatFJ4DHjNySC",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Slime Rancher: Plortable Edition"
   },
   "a3sda": {
@@ -277,7 +264,6 @@
     "sku": "a3sda",
     "stripe_price_id": "price_1OYphXBC2mcEPes8A7lxN5D4",
     "stripe_product_id": "prod_PNatLr46rqedfh",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Metroid Prime Remastered"
   },
   "a3uka": {
@@ -293,7 +279,6 @@
     "sku": "a3uka",
     "stripe_price_id": "price_1OYphYBC2mcEPes8rQtnOztX",
     "stripe_product_id": "prod_PNatkdlHfyzuE0",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Save me Mr Tako: Definitive Edition"
   },
   "a4t3a": {
@@ -309,7 +294,6 @@
     "sku": "a4t3a",
     "stripe_price_id": "price_1OYphYBC2mcEPes8jZDOpcox",
     "stripe_product_id": "prod_PNatnp1sk1k3iQ",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Hello Neighbor 2"
   },
   "a3aye": {
@@ -323,7 +307,6 @@
     "sku": "a3aye",
     "stripe_price_id": "price_1OYphZBC2mcEPes8HZT4N6lh",
     "stripe_product_id": "prod_PNatUfJu2M99kX",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Mail Mole - Collector's Edition"
   },
   "a4kya": {
@@ -338,7 +321,6 @@
     "sku": "a4kya",
     "stripe_price_id": "price_1OYphZBC2mcEPes8KtOwhRrq",
     "stripe_product_id": "prod_PNatYvEuEXxkW9",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Doom: The Classics Collection"
   },
   "a2jya": {
@@ -353,7 +335,6 @@
     "sku": "a2jya",
     "stripe_price_id": "price_1OYphaBC2mcEPes8FjnMjHtG",
     "stripe_product_id": "prod_PNatDMVhyUNgZP",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Kirby's Return to Dream Land Deluxe"
   },
   "a2gla": {
@@ -369,10 +350,12 @@
     "sku": "a2gla",
     "stripe_price_id": "price_1OYphbBC2mcEPes8LPMczdpt",
     "stripe_product_id": "prod_PNatHw564DAgaL",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Nickelodeon All-Star Brawl"
   },
   "a4nxa": {
+    "features": [
+      "new"
+    ],
     "genres": [
       "action",
       "adventure",
@@ -385,7 +368,6 @@
     "sku": "a4nxa",
     "stripe_price_id": "price_1OYphbBC2mcEPes8lQospxqs",
     "stripe_product_id": "prod_PNatLiWlPbMOW1",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "DreamWorks Dragons: Legends of The Nine Realms"
   },
   "a2g7a": {
@@ -399,7 +381,6 @@
     "sku": "a2g7a",
     "stripe_price_id": "price_1OYphcBC2mcEPes8ACvOfja1",
     "stripe_product_id": "prod_PNatsUSs6Hvv8X",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Mario + Rabbids: Sparks of Hope"
   },
   "a3pga": {
@@ -412,9 +393,8 @@
     "publisher": "Lienzo",
     "region": "ALL",
     "sku": "a3pga",
-    "stripe_price_id": "price_1OYphcBC2mcEPes8e1oiy7Y0",
+    "stripe_price_id": "price_1OZXnJBC2mcEPes8RNEI5UH1",
     "stripe_product_id": "prod_PNatoYcbbUj58U",
-    "stripe_taxcode_id": "txcd_99999999",
     "title": "Aztech Forgotten Gods"
   }
 }

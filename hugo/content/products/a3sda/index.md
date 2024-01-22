@@ -11,8 +11,8 @@ price: 60
 publisher: Nintendo
 region: ALL
 sku: a3sda
-stripe_price_id: price_1OYphXBC2mcEPes8A7lxN5D4
-stripe_product_id: prod_PNatLr46rqedfh
+stripe_price_id: price_1ObMpTIq1JpnhegE0If1fMzX
+stripe_product_id: prod_PQDFxkAeZvJAkL
 title: Metroid Prime Remastered
 ---
 

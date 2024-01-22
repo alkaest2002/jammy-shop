@@ -10,8 +10,8 @@ price: 5
 publisher: Idea Factory
 region: USA
 sku: a2r3b
-stripe_price_id: price_1OYphUBC2mcEPes8fGwpc1N8
-stripe_product_id: prod_PNatOveSqnu9ZY
+stripe_price_id: price_1ObMpQIq1JpnhegEbXVkC1zK
+stripe_product_id: prod_PQDF9iwV8oyK6a
 title: Dragon Star Varnir
 ---
 

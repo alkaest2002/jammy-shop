@@ -8,8 +8,8 @@ price: 25
 publisher: GameMill Entertainment
 region: ALL
 sku: a2gla
-stripe_price_id: price_1OYphbBC2mcEPes8LPMczdpt
-stripe_product_id: prod_PNatHw564DAgaL
+stripe_price_id: price_1ObMpWIq1JpnhegEp6DR7WDy
+stripe_product_id: prod_PQDGhFubgueY1T
 title: Nickelodeon All-Star Brawl
 ---
 

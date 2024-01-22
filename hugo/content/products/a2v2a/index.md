@@ -7,8 +7,8 @@ price: 10
 publisher: SQUARE ENIX
 region: ALL
 sku: a2v2a
-stripe_price_id: price_1OYphOBC2mcEPes8clHdbJPB
-stripe_product_id: prod_PNatSM052Qx0Tb
+stripe_price_id: price_1ObMpLIq1JpnhegE9RvKn9qE
+stripe_product_id: prod_PQDFsDCt9J1K0P
 title: 'Tactics Ogre: Reborn'
 ---
 

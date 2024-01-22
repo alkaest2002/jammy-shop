@@ -6,8 +6,8 @@ price: 25
 publisher: HandyGames
 region: ALL
 sku: a4cpa
-stripe_price_id: price_1OYphRBC2mcEPes856SUB59q
-stripe_product_id: prod_PNatM7Jd0GfiqT
+stripe_price_id: price_1ObMpOIq1JpnhegEfhmOBg4P
+stripe_product_id: prod_PQDF3TYlqQEa0C
 title: Are You Smarter than a 5th Grader?
 ---
 

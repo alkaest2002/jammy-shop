@@ -8,8 +8,8 @@ price: 15
 publisher: Inti Creates
 region: ALL
 sku: a3jxa
-stripe_price_id: price_1OYphMBC2mcEPes8Z1jiZ97N
-stripe_product_id: prod_PNatl7boCsS554
+stripe_price_id: price_1ObMpKIq1JpnhegEPagC9oUB
+stripe_product_id: prod_PQDF00Fl1MYSfV
 title: Blaster Master Zero 3
 ---
 

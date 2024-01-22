@@ -7,8 +7,8 @@ price: 25
 publisher: Nintendo
 region: ALL
 sku: a2jya
-stripe_price_id: price_1OYphaBC2mcEPes8FjnMjHtG
-stripe_product_id: prod_PNatDMVhyUNgZP
+stripe_price_id: price_1ObMpWIq1JpnhegEomYMwJlP
+stripe_product_id: prod_PQDGeOsZ0i3qvB
 title: Kirby's Return to Dream Land Deluxe
 ---
 

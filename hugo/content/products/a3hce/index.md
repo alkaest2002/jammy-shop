@@ -10,8 +10,8 @@ price: 15
 publisher: NIS America
 region: USA
 sku: a3hce
-stripe_price_id: price_1OYphPBC2mcEPes8IU482mPF
-stripe_product_id: prod_PNatOyC3dXjux9
+stripe_price_id: price_1ObMpMIq1JpnhegEntpD6FzU
+stripe_product_id: prod_PQDFjg9fRhMBX7
 title: Monark
 ---
 
