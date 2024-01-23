@@ -1,13 +1,13 @@
 {{ define "main" }}
   <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" x-data="useCart()">
-    <div x-show="cart.sessionId">
+    <div x-show="cart.stripeSessionId">
       <h1 class="text-xl font-bold mb-3">Thank you for your purchase!</h1>
       <p class="mt-3">Dear valued customer, thank you for your purchase. Please, keep stored the following purchase ID:
         <span x-text="cart.sessionId" class="font-bold"></span>. You will need it in order to receive further support, in
         case of need (<a href="mailto:support@jammy.xyz" class="text-pink-700">support@jammy.xyz</a>).</p>
       <p class="mt-3">You will receive a purchase confirmation email in a short period of time.</p>
     </div>
-    <div x-show="!cart.sessionId">
+    <div x-show="!cart.stripeSessionId">
       <h1 class="text-xl font-bold mb-3">Hey! Something strange going here.</h1>
       <p>It looks like you haven't finalized any purchase today.</p>
       <p>If you think that this is an error on our part, please drop us few lines at <a href="mailto:support@jammy.xyz" class="text-pink-700">support@jammy.xyz</a></p>
