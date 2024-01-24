@@ -13,12 +13,3 @@ export const formatCurrencyDirective = (
     });
   });
 };
-
-export const destroyDirective = (
-  el,
-  { expression },
-  { evaluateLater, cleanup }
-) => {
-  const clean = evaluateLater(expression);
-  cleanup(() => clean());
-};

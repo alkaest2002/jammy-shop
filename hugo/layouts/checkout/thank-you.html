@@ -1,5 +1,8 @@
 {{ define "main" }}
-  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" x-data="useCart()" x-destroy="cart.stripeSessionId = null; cart.stripeSessionUrl = null">
+  <div 
+    x-data="{ ...useCart(), destroy() { this.cart.stripeSessionId = null; this.cart.stripeSessionUrl = null }}"
+    class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" 
+    >
     <h1 class="text-xl font-bold mb-3">Thank you for your purchase!</h1>
     <div x-show="cart.stripeSessionId" x-cloak>
       <p class="mt-3 mb-9">Dear valued customer, thank you for your purchase. Keep the following purchase ID for future reference:</p>
