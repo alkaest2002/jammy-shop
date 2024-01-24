@@ -26,7 +26,8 @@
   class="h-full flex flex-col text-slate-700 bg-slate-50" 
   hx-boost="true"
   hx-swap="transition:true" 
-  hx-push-url="true" 
+  hx-push-url="true"
+  hx-history="false"
 >
   <header>
     <section class="relative container mx-auto z-10">
@@ -57,5 +58,25 @@
       {{ end }}
     {{ end }}
   {{ end }}
+  <script>
+
+    document.body.addEventListener("htmx:beforeRequest", function(evt) {
+      if (/thank\-you/.test(window.location)) {
+        const cartStore = Alpine.store("cartStore");
+        cartStore.stripeSessionId = null;
+        cartStore.stripeSessionUrl = null;
+      }
+        
+    }, { once: true });
+
+    document.body.addEventListener("htmx:afterRequest", function(evt) {
+      const cartStore = Alpine.store("cartStore");
+      const stripeSessionId = evt.detail.xhr.getResponseHeader("Session-Id");
+      const stripeSessionUrl = evt.detail.xhr.getResponseHeader("Session-Url");
+      if (stripeSessionId) cartStore.stripeSessionId = stripeSessionId;
+      if (stripeSessionUrl) cartStore.stripeSessionUrl = stripeSessionUrl;
+      stripeSessionUrl && window.location.replace(stripeSessionUrl);
+    }, { once: true });
+  </script>
 </body>
 </html>

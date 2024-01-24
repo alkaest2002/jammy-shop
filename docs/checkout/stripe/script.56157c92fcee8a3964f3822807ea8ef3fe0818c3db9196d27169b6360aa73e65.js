@@ -1,1 +1,0 @@
-(()=>{document.body.addEventListener("htmx:afterRequest",function(s){let t=Alpine.store("cartStore"),o=s.detail.xhr.getResponseHeader("Session-Id"),e=s.detail.xhr.getResponseHeader("Session-Url");t.stripeSessionId=o,t.stripeSessionUrl=e,e&&window.location.replace(e)});})();
