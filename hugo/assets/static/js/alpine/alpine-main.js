@@ -6,10 +6,12 @@ import useCart from "./useCart";
 import useCartSummary from "./useCartSummary";
 import useSearch from "./useSearch";
 import { useCarousel } from "./useCarousel";
-import { formatCurrency } from "./alpine-custom";
+import { formatCurrencyDirective } from "./alpine-directives";
+import { destroyDirective } from "./alpine-directives";
 
 window.Alpine = Alpine;
-Alpine.directive("currency", formatCurrency);
+Alpine.directive("currency", formatCurrencyDirective);
+Alpine.directive("destroy", destroyDirective);
 Alpine.plugin(persist);
 Alpine.plugin(focus);
 Alpine.store("cartStore", cartStore(Alpine));

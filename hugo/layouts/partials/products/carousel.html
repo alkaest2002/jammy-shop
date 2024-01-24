@@ -3,10 +3,8 @@
   <div x-data="useCarousel(10000)" @mouseover="stopAutoSlide()" @mouseout="startAutoSlide()" class="flex flex-col w-full">
     <div x-on:keydown.window.right="next" x-on:keydown.window.left="prev" tabindex="0" role="region" aria-labelledby="carousel-label"
       class="flex space-x-6">
-      
       <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
       <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
-      
       <ul x-ref="slider" tabindex="0" role="listbox"
         aria-labelledby="carousel-content-label" class="flex w-full overflow-x-hidden snap-x snap-mandatory">
         {{ range $index, $image := $images }}

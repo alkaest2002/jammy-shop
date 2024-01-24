@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" x-data="useCart()">
-    <div x-show="cart.stripeSessionId">
-      <h1 class="text-xl font-bold mb-3">Thank you for your purchase!</h1>
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16" x-data="useCart()" x-destroy="cart.stripeSessionId = null; cart.stripeSessionUrl = null">
+    <h1 class="text-xl font-bold mb-3">Thank you for your purchase!</h1>
+    <div x-show="cart.stripeSessionId" x-cloak>
       <p class="mt-3 mb-9">Dear valued customer, thank you for your purchase. Keep the following purchase ID for future reference:</p>
       <div class="flex flex-wrap gap-6 items-center p-3 my-6 bg-slate-200 border-2 rounded-lg w-fit drop-shadow" x-data="{ showCopied: false }">
         <div class="break-words max-w-80">
@@ -22,7 +22,7 @@
       </p>
       <p class="mt-9">We are also glad to let you know that a purchase confirmation email should be on its way to your box.</p>
     </div>
-    <div x-show="!cart.stripeSessionId">
+    <div x-show="!cart.stripeSessionId" x-cloak>
       <h1 class="text-xl font-bold mb-3">Hey! Something strange going here.</h1>
       <p>It looks like you haven't finalized any purchase today, or maybe you are re-visiting this page after a purchase.</p>
       <p>If you think that this is an error on our part, please drop us few lines at <a href="mailto:support@jammy.xyz" class="text-pink-700">support@jammy.xyz</a></p>

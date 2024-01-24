@@ -59,16 +59,6 @@
     {{ end }}
   {{ end }}
   <script>
-
-    document.body.addEventListener("htmx:beforeRequest", function(evt) {
-      if (/thank\-you/.test(window.location)) {
-        const cartStore = Alpine.store("cartStore");
-        cartStore.stripeSessionId = null;
-        cartStore.stripeSessionUrl = null;
-      }
-        
-    }, { once: true });
-
     document.body.addEventListener("htmx:afterRequest", function(evt) {
       const cartStore = Alpine.store("cartStore");
       const stripeSessionId = evt.detail.xhr.getResponseHeader("Session-Id");
