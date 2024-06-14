@@ -17,18 +17,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.19",
     "concurrently": "^8.2.2",
-    "cssnano": "^6.0.3",
-    "esbuild": "^0.20.0",
-    "postcss": "^8.4.33",
+    "cssnano": "^7.0.2",
+    "esbuild": "^0.21.5",
+    "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "@alpinejs/focus": "^3.13.5",
-    "@alpinejs/persist": "^3.13.5",
-    "alpinejs": "^3.13.5",
-    "htmx.org": "^1.9.10"
+    "@alpinejs/focus": "^3.14.0",
+    "@alpinejs/persist": "^3.14.0",
+    "alpinejs": "^3.14.0",
+    "htmx.org": "^1.9.12"
   }
 }
