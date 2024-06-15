@@ -1,3 +1,6 @@
-document.addEventListener("alpine:init", () => {
-  Alpine.store("cartStore").wipeCart();
-})
+(() => {
+  // <stdin>
+  document.addEventListener("alpine:init", () => {
+    Alpine.store("cartStore").wipeCart();
+  });
+})();

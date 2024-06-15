@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Checkout section on Jammy</title><link>https://demo-shop.xyz/checkout/</link><description>Recent content in Checkout section on Jammy</description><generator>Hugo</generator><language>en-US</language><atom:link href="https://demo-shop.xyz/checkout/index.xml" rel="self" type="application/rss+xml"/><item><title>Cart</title><link>https://demo-shop.xyz/checkout/cart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://demo-shop.xyz/checkout/cart/</guid><description/></item><item><title>Order cancelled</title><link>https://demo-shop.xyz/checkout/cancel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://demo-shop.xyz/checkout/cancel/</guid><description/></item><item><title>Stripe</title><link>https://demo-shop.xyz/checkout/stripe/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://demo-shop.xyz/checkout/stripe/</guid><description/></item><item><title>Thank you</title><link>https://demo-shop.xyz/checkout/thank-you/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://demo-shop.xyz/checkout/thank-you/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Checkout section on Jammy</title>
+    <link>//localhost:8000/checkout/</link>
+    <description>Recent content in Checkout section on Jammy</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="//localhost:8000/checkout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cart</title>
+      <link>//localhost:8000/checkout/cart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:8000/checkout/cart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Order cancelled</title>
+      <link>//localhost:8000/checkout/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:8000/checkout/cancel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stripe</title>
+      <link>//localhost:8000/checkout/stripe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:8000/checkout/stripe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thank you</title>
+      <link>//localhost:8000/checkout/thank-you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:8000/checkout/thank-you/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

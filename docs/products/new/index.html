@@ -1,19 +1,326 @@
-<!doctype html><html lang=en class=h-full><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=generator content="Hugo 0.127.0"><title>Jammy</title>
-<link href=/pagefind/pagefind-ui.css rel=stylesheet><link rel=stylesheet media=screen href=/static/css/main.css integrity crossorigin=anonymous><script defer src=/static/js/bundle/alpine/alpine-main.5ec13b193463ef5a6b4e314a5ee23b724684fa0e95f0898f2afec3d3d6845675.js integrity="sha256-XsE7GTRj71prTjFKXuI7ckaE+g6V8ImPKv7D09aEVnU="></script><script defer src=/static/js/bundle/htmx/htmx-main.7ecc66f8eb720fb3abdde455b2e2c590ba3af654a76742dd76e68c41a1d3ec8d.js integrity="sha256-fsxm+OtyD7Or3eRVsuLFkLo69lSnZ0LdduaMQaHT7I0="></script></head><body class="h-full flex flex-col text-slate-700 bg-slate-50" hx-boost=true hx-swap=transition:true hx-push-url=true hx-history=false><header><section class="relative container mx-auto z-10"><nav class="mx-auto p-3"><div class="flex justify-center"><a href=https://demo-shop.xyz/><img id=logo-img src=/static/images/logo.svg alt=logo-image height=64 width=64></a></div><div class="flex flex-wrap gap-y-2 justify-center items-center mt-3"><a class=mx-3 href=https://demo-shop.xyz/products/>All products</a>
-<a class="mx-3 active" href=https://demo-shop.xyz/products/new/>New arrivals</a>
-<a class=mx-3 href=https://demo-shop.xyz/products/on-sale/>On sale</a>
-<a id=cart-summary class="p-1 px-4 border-2 border-slate-700 rounded-full" href=https://demo-shop.xyz/checkout/cart/ x-data=useCartSummary() x-currency=total style="transition:all ease-in-out 300ms">computing...</a>
-<a href=# class=ml-3 x-data @click.prevent="$dispatch('canvas-open')"><img src=https://demo-shop.xyz/static/images/magnifier.svg alt="search magnifier icon" class=h-6></a></div></nav></section></header><main class=grow><section class="h-full container mx-auto"><div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16"><div class=mb-8><h2 class="text-xl font-bold text-slate-700">Products: freshly baked!</h2><a href=https://demo-shop.xyz/products/new/reversed.html class="text-sm text-pink-700">List by title in descending order</a></div><div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"><div class="grow flex flex-col"><div class="relative overflow-hidden rounded-t-lg"><a href=https://demo-shop.xyz/products/a4nxa/><img class="h-full w-full object-cover object-center bg-slate-200" src=/products/a4nxa/A4NXA.jpg alt="image of DreamWorks Dragons: Legends of The Nine Realms" height=570 width=352 loading=lazy></a></div><div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg"><div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0"><h3 class="text-lg font-semibold truncate">DreamWorks Dragons: Legends of The Nine Realms</h3><p class="relative text-lg font-extrabold">$30.00</p><div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm"><a href=https://demo-shop.xyz/genres/action/ class="text-gray-700 px-1">#Action</a>
-<a href=https://demo-shop.xyz/genres/adventure/ class="text-gray-700 px-1">#Adventure</a>
-<a href=https://demo-shop.xyz/genres/role-playing/ class="text-gray-700 px-1">#Role-Playing</a></div></div><div class="p-3 pt-0"><div class="flex flex-col gap-2 mt-3" x-data=useCart()><div class="grow text-xs p-1" x-transition:enter.duration.500ms x-transition:enter.leave.500ms x-show='cart.getItemProp({"imageThumbURL":"/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a4nxa/A4NXA.jpg","itemURL":"https://demo-shop.xyz/products/a4nxa/","price":30,"sku":"a4nxa","stripe_price_id":"price_1ObMpXIq1JpnhegELLaNbMKZ","title":"DreamWorks Dragons: Legends of The Nine Realms"}, &#39;quantity&#39;)'><span x-text='cart.getItemProp({"imageThumbURL":"/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a4nxa/A4NXA.jpg","itemURL":"https://demo-shop.xyz/products/a4nxa/","price":30,"sku":"a4nxa","stripe_price_id":"price_1ObMpXIq1JpnhegELLaNbMKZ","title":"DreamWorks Dragons: Legends of The Nine Realms"}, &#39;quantity&#39;)'></span>
-<span>in <a href=https://demo-shop.xyz/checkout/cart/ class=text-pink-700>bag</a> &mdash; </span><a class=text-pink-700 href=# @click.prevent='cart.removeItem({"imageThumbURL":"/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a4nxa/A4NXA.jpg","itemURL":"https://demo-shop.xyz/products/a4nxa/","price":30,"sku":"a4nxa","stripe_price_id":"price_1ObMpXIq1JpnhegELLaNbMKZ","title":"DreamWorks Dragons: Legends of The Nine Realms"}, true)'>remove</a></div><div class="flex flex-wrap gap-2"><a href=https://demo-shop.xyz/products/a4nxa/ class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"><img src=/static/images/eye.svg height=64 alt=magnifier-icon class=icon-font>
-</a><a href=# class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" @click.prevent='cart.addItem({"imageThumbURL":"/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a4nxa/A4NXA.jpg","itemURL":"https://demo-shop.xyz/products/a4nxa/","price":30,"sku":"a4nxa","stripe_price_id":"price_1ObMpXIq1JpnhegELLaNbMKZ","title":"DreamWorks Dragons: Legends of The Nine Realms"})'>Add item <span class=sr-only>,</span></a></div></div></div></div></div><div class="grow flex flex-col"><div class="relative overflow-hidden rounded-t-lg"><a href=https://demo-shop.xyz/products/a3hce/><img class="h-full w-full object-cover object-center bg-slate-200" src=/products/a3hce/A3HCE.jpg alt="image of Monark" height=570 width=352 loading=lazy></a></div><div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg"><div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0"><h3 class="text-lg font-semibold truncate">Monark</h3><p class="relative text-lg font-extrabold">$15.00</p><div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm"><a href=https://demo-shop.xyz/genres/adventure/ class="text-gray-700 px-1">#Adventure</a>
-<a href=https://demo-shop.xyz/genres/role-playing/ class="text-gray-700 px-1">#Role-Playing</a>
-<a href=https://demo-shop.xyz/genres/strategy/ class="text-gray-700 px-1">#Strategy</a></div></div><div class="p-3 pt-0"><div class="flex flex-col gap-2 mt-3" x-data=useCart()><div class="grow text-xs p-1" x-transition:enter.duration.500ms x-transition:enter.leave.500ms x-show='cart.getItemProp({"imageThumbURL":"/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a3hce/A3HCE.jpg","itemURL":"https://demo-shop.xyz/products/a3hce/","price":15,"sku":"a3hce","stripe_price_id":"price_1ObMpMIq1JpnhegEntpD6FzU","title":"Monark"}, &#39;quantity&#39;)'><span x-text='cart.getItemProp({"imageThumbURL":"/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a3hce/A3HCE.jpg","itemURL":"https://demo-shop.xyz/products/a3hce/","price":15,"sku":"a3hce","stripe_price_id":"price_1ObMpMIq1JpnhegEntpD6FzU","title":"Monark"}, &#39;quantity&#39;)'></span>
-<span>in <a href=https://demo-shop.xyz/checkout/cart/ class=text-pink-700>bag</a> &mdash; </span><a class=text-pink-700 href=# @click.prevent='cart.removeItem({"imageThumbURL":"/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a3hce/A3HCE.jpg","itemURL":"https://demo-shop.xyz/products/a3hce/","price":15,"sku":"a3hce","stripe_price_id":"price_1ObMpMIq1JpnhegEntpD6FzU","title":"Monark"}, true)'>remove</a></div><div class="flex flex-wrap gap-2"><a href=https://demo-shop.xyz/products/a3hce/ class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"><img src=/static/images/eye.svg height=64 alt=magnifier-icon class=icon-font>
-</a><a href=# class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" @click.prevent='cart.addItem({"imageThumbURL":"/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a3hce/A3HCE.jpg","itemURL":"https://demo-shop.xyz/products/a3hce/","price":15,"sku":"a3hce","stripe_price_id":"price_1ObMpMIq1JpnhegEntpD6FzU","title":"Monark"})'>Add item <span class=sr-only>,</span></a></div></div></div></div></div><div class="grow flex flex-col"><div class="relative overflow-hidden rounded-t-lg"><a href=https://demo-shop.xyz/products/a2lsa/><img class="h-full w-full object-cover object-center bg-slate-200" src=/products/a2lsa/A2LSA.jpg alt="image of Tin Hearts" height=570 width=352 loading=lazy></a></div><div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg"><div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0"><h3 class="text-lg font-semibold truncate">Tin Hearts</h3><p class="relative text-lg font-extrabold">$50.00</p><div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm"><a href=https://demo-shop.xyz/genres/puzzle/ class="text-gray-700 px-1">#Puzzle</a>
-<a href=https://demo-shop.xyz/genres/platformer/ class="text-gray-700 px-1">#Platformer</a></div></div><div class="p-3 pt-0"><div class="flex flex-col gap-2 mt-3" x-data=useCart()><div class="grow text-xs p-1" x-transition:enter.duration.500ms x-transition:enter.leave.500ms x-show='cart.getItemProp({"imageThumbURL":"/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a2lsa/A2LSA.jpg","itemURL":"https://demo-shop.xyz/products/a2lsa/","price":50,"sku":"a2lsa","stripe_price_id":"price_1ObMpOIq1JpnhegE1IrzEsQR","title":"Tin Hearts"}, &#39;quantity&#39;)'><span x-text='cart.getItemProp({"imageThumbURL":"/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a2lsa/A2LSA.jpg","itemURL":"https://demo-shop.xyz/products/a2lsa/","price":50,"sku":"a2lsa","stripe_price_id":"price_1ObMpOIq1JpnhegE1IrzEsQR","title":"Tin Hearts"}, &#39;quantity&#39;)'></span>
-<span>in <a href=https://demo-shop.xyz/checkout/cart/ class=text-pink-700>bag</a> &mdash; </span><a class=text-pink-700 href=# @click.prevent='cart.removeItem({"imageThumbURL":"/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a2lsa/A2LSA.jpg","itemURL":"https://demo-shop.xyz/products/a2lsa/","price":50,"sku":"a2lsa","stripe_price_id":"price_1ObMpOIq1JpnhegE1IrzEsQR","title":"Tin Hearts"}, true)'>remove</a></div><div class="flex flex-wrap gap-2"><a href=https://demo-shop.xyz/products/a2lsa/ class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"><img src=/static/images/eye.svg height=64 alt=magnifier-icon class=icon-font>
-</a><a href=# class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" @click.prevent='cart.addItem({"imageThumbURL":"/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg","imageThumbURLHeight":80,"imageThumbURLWidth":49,"imageURL":"/products/a2lsa/A2LSA.jpg","itemURL":"https://demo-shop.xyz/products/a2lsa/","price":50,"sku":"a2lsa","stripe_price_id":"price_1ObMpOIq1JpnhegE1IrzEsQR","title":"Tin Hearts"})'>Add item <span class=sr-only>,</span></a></div></div></div></div></div></div><div class=mt-9></div></div></section></main><footer><section class="container mx-auto"><div class="mx-auto text-center p-9"><p>&#169; 2024 <a href=https://demo-shop.xyz/ class=text-pink-700>Jammy</a>. All rights reserved.</p></div></section></footer><div x-data=useSearch() x-bind=trigger x-cloak class="relative z-10" aria-modal=true><div class="fixed inset-0 bg-slate-700/80"></div><div class="fixed inset-0 overflow-hidden"><div class="absolute inset-0 overflow-hidden"><div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-0 md:pl-16"><div x-show=open x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700" x-transition:enter-start=translate-x-full x-transition:enter-end=translate-x-0 x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700" x-transition:leave-start=translate-x-0 x-transition:leave-end=translate-x-full class="pointer-events-auto w-screen max-w-3xl" @click.away="open = false"><div class="flex h-full flex-col overflow-y-scroll bg-slate-200 py-6 shadow-xl"><div class="px-4 sm:px-6"><div class="flex items-start justify-between"><h2 class="text-base font-semibold leading-6 text-slate-700" id=slide-over-title>Search for products</h2><div class="ml-3 flex h-7 items-center"><button type=button class="relative rounded-md bg-slate-200 text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" @click="open = false">
-<span class="absolute -inset-2.5"></span>
-<span class=sr-only>Close panel</span><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></button></div></div></div><div class="relative mt-6 flex-1 px-4 sm:px-6"><div id=search x-ref=search-component></div></div></div></div></div></div></div></div><script src=/pagefind/pagefind-ui.js></script><script>document.body.addEventListener("htmx:afterRequest",function(e){const n=Alpine.store("cartStore"),s=e.detail.xhr.getResponseHeader("Session-Id"),t=e.detail.xhr.getResponseHeader("Session-Url");s&&(n.stripeSessionId=s),t&&(n.stripeSessionUrl=t),t&&window.location.replace(t)},{once:!0})</script></body></html>
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8000&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.127.0">
+  <title>Jammy</title>
+  
+  <link href="../../pagefind/pagefind-ui.css" rel="stylesheet">
+  
+    <link rel="stylesheet" media="screen" href="../../static/css/main.css" integrity="" crossorigin="anonymous">
+  
+  
+    <script defer src="../../static/js/bundle/alpine/alpine-main.2baaf11160bd273335453b3bbe3a64329ce4011e8b25f9a9c2dc63754efde705.js" integrity="sha256-K6rxEWC9JzM1RTs7vjpkMpzkAR6LJfmpwtxjdU795wU="></script>
+  
+  
+    <script defer src="../../static/js/bundle/htmx/htmx-main.abcee5ea1c30f260ba33d34f25f1e9975f8d6fc06c23837c84077b16d24db022.js" integrity="sha256-q87l6hww8mC6M9NPJfHpl1&#43;Nb8BsI4N8hAd7FtJNsCI="></script>
+  
+</head>
+
+<body 
+  class="h-full flex flex-col text-slate-700 bg-slate-50" 
+  hx-boost="true"
+  hx-swap="transition:true" 
+  hx-push-url="true"
+  hx-history="false"
+>
+  <header>
+    <section class="relative container mx-auto z-10">
+      <nav class="mx-auto p-3">
+  <div class="flex justify-center">
+    <a href="//localhost:8000/">
+      <img id="logo-img" src="../../static/images/logo.svg" alt="logo-image" height="64"
+        width="64">
+    </a>
+  </div>
+  <div class="flex flex-wrap gap-y-2 justify-center items-center mt-3">
+    
+    <a class="mx-3" href="//localhost:8000/products/">All products</a>
+    <a class="mx-3 active" href="//localhost:8000/products/new/">New arrivals</a>
+    <a class="mx-3" href="//localhost:8000/products/on-sale/">On sale</a>
+
+    <a id="cart-summary" class="p-1 px-4 border-2 border-slate-700 rounded-full"
+      href="//localhost:8000/checkout/cart/" x-data="useCartSummary()" x-currency="total"
+      style="transition: all ease-in-out 300ms;">computing...</a>
+    <a href="#" class="ml-3" x-data @click.prevent="$dispatch('canvas-open')">
+      <img src="//localhost:8000/static/images/magnifier.svg" alt="search magnifier icon" class="h-6">
+    </a>
+  </div>
+</nav>
+    </section>
+  </header>
+  <main class="grow">
+    <section class="h-full container mx-auto">
+      
+  <div class="mx-auto max-w-2xl px-16 md:px-8 sm:py-8 lg:max-w-7xl xs:py-4 py-16">
+    <div class="mb-8">
+      <h2 class="text-xl font-bold text-slate-700">Products: freshly baked!</h2>
+      
+        <a href="//localhost:8000/products/new/reversed.html" class="text-sm text-pink-700">List by title in descending order.</a>
+      
+    </div>
+    
+    <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+  
+    <div class="grow flex flex-col">
+      
+      
+      <div class="relative overflow-hidden rounded-t-lg">
+        <a href="//localhost:8000/products/a4nxa/">
+          <img 
+            class="h-full w-full object-cover object-center bg-slate-200"
+            src="../../products/a4nxa/A4NXA.jpg" 
+            alt="image of DreamWorks Dragons: Legends of The Nine Realms"
+            height="570"
+            width="352"
+            loading="lazy" 
+          >
+        </a>
+      </div>
+      <div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg">
+        <div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0">
+          <h3 class="text-lg font-semibold truncate">DreamWorks Dragons: Legends of The Nine Realms</h3>
+          <p class="relative text-lg font-extrabold">$30.00</p>
+          
+            <div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm">
+            
+              <a href="//localhost:8000/genres/action/" class="text-gray-700 px-1">#Action</a>
+            
+              <a href="//localhost:8000/genres/adventure/" class="text-gray-700 px-1">#Adventure</a>
+            
+              <a href="//localhost:8000/genres/role-playing/" class="text-gray-700 px-1">#Role-Playing</a>
+            
+            </div>
+          
+        </div>
+        <div class="p-3 pt-0">
+          <div class="flex flex-col gap-2 mt-3" x-data="useCart()">
+  <div 
+    class="grow text-xs p-1" 
+    x-transition:enter.duration.500ms
+    x-transition:enter.leave.500ms
+    x-show="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a4nxa/A4NXA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a4nxa/&#34;,&#34;price&#34;:30,&#34;sku&#34;:&#34;a4nxa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpXIq1JpnhegELLaNbMKZ&#34;,&#34;title&#34;:&#34;DreamWorks Dragons: Legends of The Nine Realms&#34;}, 'quantity')"
+  >
+    <span x-text="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a4nxa/A4NXA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a4nxa/&#34;,&#34;price&#34;:30,&#34;sku&#34;:&#34;a4nxa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpXIq1JpnhegELLaNbMKZ&#34;,&#34;title&#34;:&#34;DreamWorks Dragons: Legends of The Nine Realms&#34;}, 'quantity')"></span>
+    <span>in <a href="//localhost:8000/checkout/cart/" class="text-pink-700">bag</a> &mdash; </span>
+    <a class="text-pink-700" href="#" @click.prevent="cart.removeItem({&#34;imageThumbURL&#34;:&#34;/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a4nxa/A4NXA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a4nxa/&#34;,&#34;price&#34;:30,&#34;sku&#34;:&#34;a4nxa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpXIq1JpnhegELLaNbMKZ&#34;,&#34;title&#34;:&#34;DreamWorks Dragons: Legends of The Nine Realms&#34;}, true)">remove</a>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    
+    <a href="//localhost:8000/products/a4nxa/"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" >
+      <img src="../../static/images/eye.svg" height="64" alt="magnifier-icon" class="icon-font">
+    </a>
+    
+    <a href="#"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"
+      @click.prevent="cart.addItem({&#34;imageThumbURL&#34;:&#34;/products/a4nxa/A4NXA_hud5da992c2eb6c84a2910273a4fef1ae7_156869_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a4nxa/A4NXA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a4nxa/&#34;,&#34;price&#34;:30,&#34;sku&#34;:&#34;a4nxa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpXIq1JpnhegELLaNbMKZ&#34;,&#34;title&#34;:&#34;DreamWorks Dragons: Legends of The Nine Realms&#34;})">
+      Add item <span class="sr-only">, </span>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="grow flex flex-col">
+      
+      
+      <div class="relative overflow-hidden rounded-t-lg">
+        <a href="//localhost:8000/products/a3hce/">
+          <img 
+            class="h-full w-full object-cover object-center bg-slate-200"
+            src="../../products/a3hce/A3HCE.jpg" 
+            alt="image of Monark"
+            height="570"
+            width="352"
+            loading="lazy" 
+          >
+        </a>
+      </div>
+      <div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg">
+        <div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0">
+          <h3 class="text-lg font-semibold truncate">Monark</h3>
+          <p class="relative text-lg font-extrabold">$15.00</p>
+          
+            <div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm">
+            
+              <a href="//localhost:8000/genres/adventure/" class="text-gray-700 px-1">#Adventure</a>
+            
+              <a href="//localhost:8000/genres/role-playing/" class="text-gray-700 px-1">#Role-Playing</a>
+            
+              <a href="//localhost:8000/genres/strategy/" class="text-gray-700 px-1">#Strategy</a>
+            
+            </div>
+          
+        </div>
+        <div class="p-3 pt-0">
+          <div class="flex flex-col gap-2 mt-3" x-data="useCart()">
+  <div 
+    class="grow text-xs p-1" 
+    x-transition:enter.duration.500ms
+    x-transition:enter.leave.500ms
+    x-show="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a3hce/A3HCE.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a3hce/&#34;,&#34;price&#34;:15,&#34;sku&#34;:&#34;a3hce&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpMIq1JpnhegEntpD6FzU&#34;,&#34;title&#34;:&#34;Monark&#34;}, 'quantity')"
+  >
+    <span x-text="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a3hce/A3HCE.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a3hce/&#34;,&#34;price&#34;:15,&#34;sku&#34;:&#34;a3hce&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpMIq1JpnhegEntpD6FzU&#34;,&#34;title&#34;:&#34;Monark&#34;}, 'quantity')"></span>
+    <span>in <a href="//localhost:8000/checkout/cart/" class="text-pink-700">bag</a> &mdash; </span>
+    <a class="text-pink-700" href="#" @click.prevent="cart.removeItem({&#34;imageThumbURL&#34;:&#34;/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a3hce/A3HCE.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a3hce/&#34;,&#34;price&#34;:15,&#34;sku&#34;:&#34;a3hce&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpMIq1JpnhegEntpD6FzU&#34;,&#34;title&#34;:&#34;Monark&#34;}, true)">remove</a>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    
+    <a href="//localhost:8000/products/a3hce/"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" >
+      <img src="../../static/images/eye.svg" height="64" alt="magnifier-icon" class="icon-font">
+    </a>
+    
+    <a href="#"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"
+      @click.prevent="cart.addItem({&#34;imageThumbURL&#34;:&#34;/products/a3hce/A3HCE_hu27496d6a9c7fa350ba277aeb2e63f2c0_79963_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a3hce/A3HCE.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a3hce/&#34;,&#34;price&#34;:15,&#34;sku&#34;:&#34;a3hce&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpMIq1JpnhegEntpD6FzU&#34;,&#34;title&#34;:&#34;Monark&#34;})">
+      Add item <span class="sr-only">, </span>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="grow flex flex-col">
+      
+      
+      <div class="relative overflow-hidden rounded-t-lg">
+        <a href="//localhost:8000/products/a2lsa/">
+          <img 
+            class="h-full w-full object-cover object-center bg-slate-200"
+            src="../../products/a2lsa/A2LSA.jpg" 
+            alt="image of Tin Hearts"
+            height="570"
+            width="352"
+            loading="lazy" 
+          >
+        </a>
+      </div>
+      <div class="grow flex flex-col justify-between bg-slate-200 rounded-b-lg">
+        <div class="relative grid grid-cols-1 gap-1 justify-between items-center p-3 pb-0">
+          <h3 class="text-lg font-semibold truncate">Tin Hearts</h3>
+          <p class="relative text-lg font-extrabold">$50.00</p>
+          
+            <div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm">
+            
+              <a href="//localhost:8000/genres/puzzle/" class="text-gray-700 px-1">#Puzzle</a>
+            
+              <a href="//localhost:8000/genres/platformer/" class="text-gray-700 px-1">#Platformer</a>
+            
+            </div>
+          
+        </div>
+        <div class="p-3 pt-0">
+          <div class="flex flex-col gap-2 mt-3" x-data="useCart()">
+  <div 
+    class="grow text-xs p-1" 
+    x-transition:enter.duration.500ms
+    x-transition:enter.leave.500ms
+    x-show="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a2lsa/A2LSA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a2lsa/&#34;,&#34;price&#34;:50,&#34;sku&#34;:&#34;a2lsa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpOIq1JpnhegE1IrzEsQR&#34;,&#34;title&#34;:&#34;Tin Hearts&#34;}, 'quantity')"
+  >
+    <span x-text="cart.getItemProp({&#34;imageThumbURL&#34;:&#34;/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a2lsa/A2LSA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a2lsa/&#34;,&#34;price&#34;:50,&#34;sku&#34;:&#34;a2lsa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpOIq1JpnhegE1IrzEsQR&#34;,&#34;title&#34;:&#34;Tin Hearts&#34;}, 'quantity')"></span>
+    <span>in <a href="//localhost:8000/checkout/cart/" class="text-pink-700">bag</a> &mdash; </span>
+    <a class="text-pink-700" href="#" @click.prevent="cart.removeItem({&#34;imageThumbURL&#34;:&#34;/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a2lsa/A2LSA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a2lsa/&#34;,&#34;price&#34;:50,&#34;sku&#34;:&#34;a2lsa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpOIq1JpnhegE1IrzEsQR&#34;,&#34;title&#34;:&#34;Tin Hearts&#34;}, true)">remove</a>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    
+    <a href="//localhost:8000/products/a2lsa/"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition" >
+      <img src="../../static/images/eye.svg" height="64" alt="magnifier-icon" class="icon-font">
+    </a>
+    
+    <a href="#"
+      class="grow relative flex items-center justify-center rounded-md border border-transparent bg-slate-300 px-8 py-2 hover:bg-slate-400 text-sm font-medium transition"
+      @click.prevent="cart.addItem({&#34;imageThumbURL&#34;:&#34;/products/a2lsa/A2LSA_hu3c4467bd06a95b8a9d49442756e9acde_86075_0x80_resize_q75_box.jpg&#34;,&#34;imageThumbURLHeight&#34;:80,&#34;imageThumbURLWidth&#34;:49,&#34;imageURL&#34;:&#34;/products/a2lsa/A2LSA.jpg&#34;,&#34;itemURL&#34;:&#34;//localhost:8000/products/a2lsa/&#34;,&#34;price&#34;:50,&#34;sku&#34;:&#34;a2lsa&#34;,&#34;stripe_price_id&#34;:&#34;price_1ObMpOIq1JpnhegE1IrzEsQR&#34;,&#34;title&#34;:&#34;Tin Hearts&#34;})">
+      Add item <span class="sr-only">, </span>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+<div class="mt-9">
+  
+</div>
+  </div>
+
+    </section>
+  </main>
+  <footer>
+    <section  class="container mx-auto">
+      <div class="mx-auto text-center p-9">
+ <p>&#169; 2024 <a href="//localhost:8000/" class="text-pink-700">Jammy</a>. All rights reserved.</p>
+</div>
+    </section>
+  </footer>
+  <div 
+  x-data="useSearch()"
+  x-bind="trigger"
+  x-cloak
+  class="relative z-10" 
+  aria-modal="true"
+>
+  <div class="fixed inset-0 bg-slate-700/80"></div>
+  <div class="fixed inset-0 overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-0 md:pl-16">
+        <div 
+          x-show="open" 
+          x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700"
+          x-transition:enter-start="translate-x-full" 
+          x-transition:enter-end="translate-x-0"
+          x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700"
+          x-transition:leave-start="translate-x-0" 
+          x-transition:leave-end="translate-x-full"
+          class="pointer-events-auto w-screen max-w-3xl"
+          @click.away="open = false"
+        >
+          <div class="flex h-full flex-col overflow-y-scroll bg-slate-200 py-6 shadow-xl">
+            <div class="px-4 sm:px-6">
+              <div class="flex items-start justify-between">
+                <h2 class="text-base font-semibold leading-6 text-slate-700" id="slide-over-title">Search for products</h2>
+                <div class="ml-3 flex h-7 items-center">
+                  <button type="button"
+                    class="relative rounded-md bg-slate-200 text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    @click="open = false">
+                    <span class="absolute -inset-2.5"></span>
+                    <span class="sr-only">Close panel</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-6 flex-1 px-4 sm:px-6">
+             <div id="search" x-ref="search-component"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../pagefind/pagefind-ui.js"></script>
+  
+  <script>
+    document.body.addEventListener("htmx:afterRequest", function(evt) {
+      const cartStore = Alpine.store("cartStore");
+      const stripeSessionId = evt.detail.xhr.getResponseHeader("Session-Id");
+      const stripeSessionUrl = evt.detail.xhr.getResponseHeader("Session-Url");
+      if (stripeSessionId) cartStore.stripeSessionId = stripeSessionId;
+      if (stripeSessionUrl) cartStore.stripeSessionUrl = stripeSessionUrl;
+      stripeSessionUrl && window.location.replace(stripeSessionUrl);
+    }, { once: true });
+  </script>
+</body>
+</html>

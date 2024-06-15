@@ -3,7 +3,7 @@
     <div class="mb-8">
       <h2 class="text-xl font-bold text-slate-700">Products: {{ .Title }}</h2>
       {{ with .OutputFormats.Get "reversed" }}
-        <a href="{{ .Permalink }}" class="text-sm text-pink-700">List by title in descending order</a>
+        <a href="{{ .Permalink }}" class="text-sm text-pink-700">List by title in descending order.</a>
       {{ end }}
     </div>
     {{ $paginator := .Paginate .RegularPages.ByTitle 12 }}

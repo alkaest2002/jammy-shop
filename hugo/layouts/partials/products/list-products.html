@@ -22,7 +22,7 @@
           {{ with .GetTerms "genres" }}
             <div class="mt-0 mb-5 flex flex-wrap gap-1 text-sm">
             {{ range . }}
-              <a href="{{ .Permalink}}" class="text-gray-700 px-1">#{{ .Title }}</a>
+              <a href="{{ .Permalink }}" class="text-gray-700 px-1">#{{ .Title }}</a>
             {{ end }}
             </div>
           {{ end }}
